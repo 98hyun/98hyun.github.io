@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/pygments.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>Sep's</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav justify-content-center">
+  <a class="nav-link" href="/">Home</a>
+  <a class="nav-link" href="/about/">About</a>
+</ul>
+        
+	<div class="container post">
+		<hr>
+	    <h3>2020 Bigcontest 공모전 후기</h3>
+	    <p class="tag"><strong>Author:</strong> 98hyun</p>
+	    <p class="tag"><strong>Published:</strong> 2020-09-28</p>
+        <p class="tag">
+	
+	    <strong>Tags:</strong> 
+	    
+	        <a href="/tag/python/">python </a>    
+	    
+	        <a href="/tag/statistics/">statistics </a>    
+	    
+	
+</p>
+        <hr>
+        <p>오늘의 공부는 맨 아래에 있다. - 기초통계</p>
+<h3>공모전 후기</h3>
+<p>8월부터 오늘까지 한달여간 공모전에 매달렸다.   </p>
+<p>분석은 python으로 CJ 올리브 네트웍스 물류데이터를 분석했다.   </p>
+<p>분석 방향은 2019년 대비 2020년의 송장건수 변화.   </p>
+<p>그 이면에는 코로나 확산세와 여러 이유가 있을 것으로 추측했다.  </p>
+<p>결과는 <code>코로나 확산세를 느끼면 두려움을 느낀 사람들은 택배를 더 이용</code> 한다.  </p>
+<p>그리고 <code>두려움계수</code>를 수학적으로 모델링 하려고 했지만 실패했다.   </p>
+<p>내가 생각하는 실패 이유.  </p>
+<ol>
+<li>제공 데이터는 서울.대구 였기에 전국을 얘기하기는 어려웠다.    <ul>
+<li>전국도 그럴것이라는 추측은 있었다.   </li>
+</ul>
+</li>
+<li>제공 데이터가 부족했다.  <ul>
+<li>일단위로 나눠도 분석에 효과가 없어서 주간으로 묶었다.  </li>
+<li>제공 데이터는 2월부터 5월까지 주어졌다.  </li>
+</ul>
+</li>
+</ol>
+<p>여기까지 간추린 내용이다.   </p>
+<p>공모전중 협업을 하면서 느낀점을 적는다.  </p>
+<h4>분석환경 통합</h4>
+<p>일단 같은 데이터, 같은 파일로 하지 못한게 아쉬웠다.   </p>
+<p>분석을 하면서 서로 다른 부분을 건드려서 어디가 어떻게 변했는지 정확히 찾을 수가 없었다.   </p>
+<p>또, 분석 환경이 다 달랐다. pycharm, colab , jupyter 등 다양한 환경에   </p>
+<p>파일 마저 가져온 외부데이터도 포함시키니 건드릴 수가 없었다.  </p>
+<p>다음번엔 환경을 합치는게 중요하다고 생각했다.   </p>
+<p>버전 통합에는 git 을 사용하고, 파일 통합에는 slack 이나 kakaotalk을 이용한  </p>
+<p>신속한 업데이트가 중요하다는 것을 알았다.  </p>
+<ul>
+<li>git pull request 공부하기   </li>
+</ul>
+<h4>역할 분담</h4>
+<p>역시 기획이면 기획, 분석이면 분석 등 역할을 나누는게 맞다고 다시금 느꼈다.  </p>
+<p>내 기준에서는 이게 맞고, 다른 사람이 볼때는 이게 맞을 수 있다.  </p>
+<p>틀린게 아니지만 불필요한 마찰이 스피디하게 결과물을 만들어내지 못했다.  </p>
+<p>역할 분담이 중요하다는 것을 느꼈다.  </p>
+<h3>오늘의 공부</h3>
+<p>이번 공부 중에 통계 공부의 중요성을 다시금 느꼈다.  </p>
+<p>위에서 간추려 전한 내용엔 들어가 있지 않은 내용인데   </p>
+<p>회귀 모델링을 시도한 적이 있었다.  </p>
+<p>하지만, 충분하지 않은 데이터로 예측하려고 했는데  </p>
+<p>회귀에는 4가지 가정이 필수다. </p>
+<p><code>선형성</code>,<code>등분산성</code>,<code>독립성</code>,<code>정규성</code> 이다.  </p>
+<p>이를 적용하는 방법도 모르고. 심지어 틀리고. 무작정 대입했었다.  </p>
+<p>가정을 검증할때 방법으로 <code>귀무가설</code>과 <code>대립가설</code>이 있다.  </p>
+<p><code>귀무가설</code>은 연구에서 검증하는 가설. <code>대립가설</code>은 귀무가설과 반대되는 가설.  </p>
+<p><code>대립가설</code>은 연구자가 연구를 통해 입증되거나 기대하는 가설을 둔다.  </p>
+<p>이런 기초적인 통계도 모르고 무작정 시도 한게 부끄럽지만  </p>
+<p>앞으로 기초 통계학 공부도 유튜브를 통해 하려고 한다.   </p>
+    </div>
+
+        <h3 class="text-center">Social Platforms</h3>
+<div class="social text-center">
+    <a href="https://github.com/98hyun" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+    <a href="mailto:ckdckd01@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
+</div>
+    </div>
+</body>
+
+</html>
