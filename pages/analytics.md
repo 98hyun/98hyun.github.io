@@ -1,7 +1,7 @@
 title: google analytics , git 
 author: 98hyun
 published: 2020-11-01
-tags:[GA, git]
+tags: [GA, git]
 
 ### google analytics 
 
