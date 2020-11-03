@@ -21,11 +21,7 @@ tags: [python ]
 
 주목할 만한 점은 union 기능이 dict 에도 추가 됐다.  
 
-    :::python 
-    x = {"key1": "value1 from x", "key2": "value2 from x"}
-    y = {"key2": "value2 from y", "key3": "value3 from y"}
-    print(y|x)
-    # {'key2': 'value2 from x', 'key3': 'value3 from y', 'key1': 'value1 from x'}
+<script src="https://gist.github.com/98hyun/292a6791e0614f097b3cc9c65f4cf0ad.js"></script>
 
 2. built-in 
 
@@ -35,12 +31,7 @@ built-in 이 무슨 뜻인지 정확히는 모르겠지만 str, tuple, list 같�
 
 이번 str 자료구조에서 사용할 수 있는 method가 추가 됐다.  
 
-    :::python 
-    a='98hyun'
-    print(a.removeprefix('98'))
-    print(a.removesuffix('hyun'))
-    # 'hyun'
-    # '98' 
+<script src="https://gist.github.com/98hyun/cc1621c12deb54167f26fd501b241f9d.js"></script>
 
 3. improvement
 
