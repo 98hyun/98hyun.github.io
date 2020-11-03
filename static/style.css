@@ -5,6 +5,7 @@ body{
     color:#eeeeee;
 }
 .container{
+    width: 75%;
     background-color:black;
     border: 0.1px solid #eeeeee ;
     border-radius: 3px;
