@@ -1,7 +1,7 @@
 title: 2020 pycon 참가 후기
 author: 98hyun
 published: 2020-10-31
-tags: [pycon, python, flask]
+tags: [pycon, python, flask, 2020]
 
 ### 후기 
 

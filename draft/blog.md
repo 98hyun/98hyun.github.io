@@ -1,7 +1,7 @@
 title: Make Blog 
 author: 98hyun
 published: 2020-09-01
-tags: [staticBlog, python, flask]
+tags: [staticBlog, python, flask, 2020]
 
 언젠가 부터 jekyll 블로그의 기능적인 부분이 망가졌다.  
 

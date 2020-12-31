@@ -1,7 +1,7 @@
 title: 2020 Bigcontest 공모전 후기
 author: 98hyun
 published: 2020-09-28
-tags: [python, statistics]
+tags: [python, statistics, 2020]
 
 오늘의 공부는 맨 아래에 있다. - 기초통계
 
