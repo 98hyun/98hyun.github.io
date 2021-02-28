@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-164778559-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/pygments.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title>Sep's</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav justify-content-center">
+  <a class="nav-link" href="/">Home</a>
+  <a class="nav-link" href="/about/">About</a>
+</ul>
+        
+	<div class="container post">
+		<hr>
+	    <h3>2021-01-31</h3>
+	    <p class="tag"><strong>Author:</strong> 98hyun</p>
+	    <p class="tag"><strong>Published:</strong> 2021-01-31</p>
+        <p class="tag">
+	
+	    <strong>Tags:</strong> 
+	    
+	        <a href="/tag/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/">개발환경 </a>    
+	    
+	        <a href="/tag/%EA%B3%B5%EA%B0%84%EB%B6%84%EC%84%9D/">공간분석 </a>    
+	    
+	        <a href="/tag/%EC%8B%9C%EA%B0%81%ED%99%94/">시각화 </a>    
+	    
+	
+</p>
+        <hr>
+        <h2>개발환경</h2>
+
+<p>현재 컴퓨터 사양. 프로세서 인텔 코어 i3-7100U CPU 2.40GHz. RAM 8GB. 분석은 가능. 모델 돌리기 힘들다. 컴퓨터 깨끗하게 + docker 공부로 환경만들기. </p>
+<h4>docker</h4>
+
+<p>정확히 무슨뜻인지는 모르지만, -i로 shell에서 소통할수있게 해주고, -t는 무슨뜻인지 잘 모르겠다. -p는 jupyter 포트, name은 원하는 컨테이너 이름. conti.. 는 image name, /bin/bash로 shell을 실행하게 해주는것같다.  </p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 이미지로 miniconda 컨테이너 만들기.</span>
+<span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">i</span> <span class="o">-</span><span class="n">t</span> <span class="o">-</span><span class="n">p</span> <span class="mi">8888</span><span class="p">:</span><span class="mi">8888</span> <span class="o">--</span><span class="n">name</span> <span class="p">{</span><span class="n">name</span><span class="p">}</span> <span class="n">continuumio</span><span class="o">/</span><span class="n">miniconda3</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span>
+
+<span class="c1"># conda 명령어로 한 후, jupyter 연동.</span>
+<span class="c1"># --no-browser는 없어도 되는데 --allow-root 는 필요. </span>
+<span class="n">jupyter</span> <span class="n">notebook</span> <span class="o">--</span><span class="n">ip</span> <span class="mf">0.0</span><span class="o">.</span><span class="mf">0.0</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">browser</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">root</span>
+</code></pre></div>
+
+
+<h3>miniconda</h3>
+
+<p>필요한 라이브러리. 느낌대로.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># 웬만하면 파이썬 3.7.</span>
+<span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">eda</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.7</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">eda</span>
+
+<span class="c1"># 채널은 conda-forge 에서만. 제일 믿음직스러운. </span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">numpy</span> <span class="n">pandas</span> <span class="n">matplotlib</span> <span class="n">seaborn</span> <span class="n">requests</span> <span class="n">bs4</span> <span class="n">selenium</span> <span class="n">notebook</span>
+</code></pre></div>
+
+
+<h4>VS Code</h4>
+
+<p>git과 연동도 되고 편리한 extensions이많은 VS Code. 보통 크롤링과 github 관리로 많이 사용.  </p>
+<h4>구글 코랩</h4>
+
+<p>위와 스펙에서 돌아가기 힘든 딥러닝에 많이 사용.</p>
+<h2>위도 경도 다루는 방법.</h2>
+
+<ol>
+<li>api 선택.</li>
+</ol>
+<p>google, kakao 등 여러 api 중 선택하면 된다. 여기서는 google과 kakao 만 다룰 것이다. <br />
+네이버는 포함 안했다. 네이버로 하고 싶다면 <code>naver map api in python</code> 로 검색하면 된다.  </p>
+<ol>
+<li>api 발급.</li>
+</ol>
+<p>kakao : https://developers.kakao.com/<br />
+google : https://cloud.google.com/</p>
+<ol>
+<li>방법   </li>
+</ol>
+<h4>주소를 위.경도로 변환.</h4>
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># kakao</span>
+
+<span class="c1"># library  </span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="c1"># config  </span>
+<span class="n">rest_api_key</span> <span class="o">=</span> <span class="s1">&#39;********************************&#39;</span>  
+<span class="n">header</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="s1">&#39;KakaoAK &#39;</span> <span class="o">+</span> <span class="n">rest_api_key</span><span class="p">}</span>
+
+<span class="c1"># 위.경도 longitude(long) 롱이니까 경도라고 외우면 쉽다.   </span>
+<span class="n">x</span><span class="o">=</span><span class="mf">127.1268</span> <span class="c1"># 단국대 lon 구글 스크래핑.  </span>
+<span class="n">y</span><span class="o">=</span><span class="mf">37.3216</span>  <span class="c1"># 단국대 lat</span>
+
+<span class="c1"># 요청 주소</span>
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://dapi.kakao.com/v2/local/search/address.json?query=</span><span class="si">{</span><span class="n">address</span><span class="si">}</span><span class="s1">&#39;</span>
+
+<span class="c1"># 결과값</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">header</span><span class="p">)</span>  
+<span class="n">res</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;documents&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;address&#39;</span><span class="p">])</span>
+
+<span class="p">:::</span><span class="n">python</span>
+<span class="c1"># google</span>
+
+<span class="c1"># library  </span>
+<span class="kn">import</span> <span class="nn">googlemaps</span>
+
+<span class="c1"># config  </span>
+<span class="n">gmaps</span><span class="o">=</span><span class="n">googlemaps</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;***************************************&#39;</span><span class="p">)</span>
+
+<span class="c1"># 위.경도 </span>
+<span class="n">address</span><span class="o">=</span><span class="s2">&quot;알고 싶은곳.&quot;</span>
+
+<span class="c1"># 결과값</span>
+<span class="n">g</span><span class="o">=</span><span class="n">gmaps</span><span class="o">.</span><span class="n">geocode</span><span class="p">(</span><span class="n">address</span><span class="p">,</span><span class="n">language</span><span class="o">=</span><span class="s1">&#39;ko&#39;</span><span class="p">)</span>
+
+<span class="c1"># 위.경도</span>
+<span class="n">lat</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;geometry&#39;</span><span class="p">][</span><span class="s1">&#39;location&#39;</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span>
+<span class="n">lng</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;geometry&#39;</span><span class="p">][</span><span class="s1">&#39;location&#39;</span><span class="p">][</span><span class="s1">&#39;lng&#39;</span><span class="p">]</span>
+</code></pre></div>
+
+
+<h4>위.경도를 주소로 변환.</h4>
+
+<div class="codehilite"><pre><span></span><code><span class="c1"># kakao</span>
+
+<span class="c1"># library  </span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="c1"># config  </span>
+<span class="n">rest_api_key</span> <span class="o">=</span> <span class="s1">&#39;********************************&#39;</span>  
+<span class="n">header</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="s1">&#39;KakaoAK &#39;</span> <span class="o">+</span> <span class="n">rest_api_key</span><span class="p">}</span>
+
+<span class="c1"># 위.경도 longitude(long) 롱이니까 경도라고 외우면 쉽다.   </span>
+<span class="n">x</span><span class="o">=</span><span class="mf">127.1268</span> <span class="c1"># 단국대 lon 구글 스크래핑.  </span>
+<span class="n">y</span><span class="o">=</span><span class="mf">37.3216</span>  <span class="c1"># 단국대 lat</span>
+
+<span class="c1"># 요청 주소</span>
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://dapi.kakao.com/v2/local/geo/coord2regioncode.json?x=</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">&amp;y=</span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1">&#39;</span>
+
+<span class="c1"># 결과값</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">header</span><span class="p">)</span>  
+<span class="n">res</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;documents&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;address_name&#39;</span><span class="p">])</span>
+
+<span class="c1"># 경기도 용인시 수지구 죽전동  </span>
+<span class="c1"># res 는 결과값으로 dictionary 형태로 주어져서 res를 print 해서 원하는것을 파싱하면 된다.</span>
+
+
+<span class="p">:::</span><span class="n">python</span> 
+<span class="c1"># google</span>
+
+<span class="c1"># library  </span>
+<span class="kn">import</span> <span class="nn">googlemaps</span>
+
+<span class="c1"># config  </span>
+<span class="n">gmaps</span><span class="o">=</span><span class="n">googlemaps</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;***************************************&#39;</span><span class="p">)</span>
+
+<span class="c1"># 위.경도 </span>
+<span class="n">x</span><span class="o">=</span><span class="mf">127.1268</span> <span class="c1"># 단국대 lon 구글 스크래핑.  </span>
+<span class="n">y</span><span class="o">=</span><span class="mf">37.3216</span>  <span class="c1"># 단국대 lat</span>
+
+<span class="c1"># 결과값</span>
+<span class="n">g</span><span class="o">=</span><span class="n">gmaps</span><span class="o">.</span><span class="n">reverse_geocode</span><span class="p">((</span><span class="n">j</span><span class="o">.</span><span class="n">lat</span><span class="p">,</span> <span class="n">j</span><span class="o">.</span><span class="n">lon</span><span class="p">),</span><span class="n">language</span><span class="o">=</span><span class="s1">&#39;ko&#39;</span><span class="p">)</span>
+<span class="n">geo_str</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;formatted_address&#39;</span><span class="p">]</span>
+</code></pre></div>
+
+
+<h2>시각화와 tableau</h2>
+
+<h4>전주의적 속성</h4>
+
+<p>방향, 길이, 너비, 크기, 형태, 곡률, 표시 추가, 둘러싸기, 색상, 색조, 위치, 공간적 그룹핑   </p>
+<h4>데이터의 유형</h4>
+
+<p>범주형 데이터 : 분류<br />
+순서형 데이터 : 범주형 데이터의 한 분류. 대신 순서가 있다. 숫자와 관련되어 있을 수 있지만, 그 간격이 일정하지 않다.<br />
+정량적 데이터 : 수치 데이터. 이산과 연속이 있다. 시간은 순서형, 정량적 모두에 속한다.  </p>
+<h4>색의 사용</h4>
+
+<p>순차적 : 낮음에서 높음을 표현.<br />
+발산형 : 중리접인 중간점이 있는 순차적인 2가지 색상.<br />
+범주형 : 개별비교를 위한 색상 대비<br />
+강조 : 강조하기 위한 색. (파란색,녹색)<br />
+경고 : 경고하기 위한 색. (빨간색)  </p>
+<h4>그래프의 특징</h4>
+
+<p>스파크라인 : 셀 안에 그래프를 그려 효과적으로 보여준다. 공간 절약.<br />
+불릿그래프 : 목표와 진행상황.<br />
+지터그래프 : 구성요소와 원,산포도 그래프. 여러개 중 돋보이게 할 때 지터그래프.<br />
+점 그래프 : 비교.<br />
+막대그래프 : 기본.
+heatmap : 모양과 색깔로 표시하면 효과적. KPI에 자주 쓰일것 같다. 위 아래 아이콘으로.<br />
+지도-&gt;픽셀 : 작은 도시 혹은 큰 도시를 같은 크기로 바꾸고 색을 입혀 보기 쉽게 한다.<br />
+달력 : 날짜 별 히트맵.  </p>
+<h4>tableau 팁</h4>
+
+<p>빈 문자열 지우기 : 계산된 필드 만들기 -&gt; char(32)<br />
+도구 설명안의 시트 : 도구설명 -&gt; 시트. 설정은 하고싶은 필터를 같이 도구설명에 쓰기.  <br />
+대시보드에서 필터사용 : 원하고자하는 것을 누르고 깔때기 필터누르면 편하다. 혹은 대쉬보드 동작.<br />
+도넛 차트 : sum(0) avg(0) 뭔가 축 나눌때 유용.<br />
+크로스 탭 : 상 더블클릭의 시작은 행이다. 행에 차원을 더블클릭하고, 측정값을 더블클릭하면 측정값은 열로 간다. 그래서 크로스 탭은 모든 행과 열은 차원이고 안에 측정값으로 레이블을 넣는다. <br />
+드롭다운 : 필터의 드롭다운이 이쁘다. 그리고 관련된 값만 하는게 여러가지 안나오고 이쁘다.<br />
+특정차원 : 전체 max에서가 아니라 각각의 category에서 백분율로 보고 싶다면 특정차원에서만 보면 된다. <br />
+round bar : avg(0) 과 측정값으로 만든다. 후에 측정값을 경로에 두면 두 이중축을 잇는 선이 생기고 크기를 조정한다. <a href="https://www.youtube.com/watch?v=mTlDrJELFkk&list=PL6ICdBRB3Rx1ME7YB0O4Aik-mqtXJrBhU&index=18">참고</a><br />
+이중축과 결합축 : 드래그로 구분 가능하다. 오른쪽으로가면 이중축, 왼쪽으로 가면 결합축.<br />
+초반에 숫자 형식 및 기본 집계 방식을 바꾸는 방법 : 데이터 패널에서 기본속성을 만진다. <br />
+날짜 필터 : <a href="https://www.youtube.com/watch?v=LybGzACLGo0&list=PL6ICdBRB3Rx1ME7YB0O4Aik-mqtXJrBhU&index=22">참고</a>
+계산된 필드와 매개변수의 차이점 : 계산된 필드는 static 매개변수는 dynamic 또,혼자쓰이지 못한다.<br />
+중첩정렬 : 앞의것도 신경쓰는 정렬. 예로 인천의 중구와 서울의 중구가 다르게 측정되야 하므로 nested sort를 사용해서 측정한다.<br />
+딱 맵만 나오게 : 이중축 활용. 맵 계층의 불투명도 활용.<br />
+전 대비 증가 : 퀵 테이블 계산에서 비율차이를 누른다. 혹은 점선 및 선으로 표시.<br />
+레이블 바꾸기 - 그룹 만들기 : 그룹만들기로 하나하나 이름을 바꿔준다. <br />
+색깔 통일 : 범례에 가서 단계별 2단계로 하고, 최소 최대 색을 같은 색으로하면 된다. <br />
+모양 아이콘 : <a href="https://www.flaticon.com/">사이트</a> 에서 png 다운로드.<br />
+left : 문자열 잘라내기. left(문자열,숫자)<br />
+연속-&gt;불연속 : 숫자를 구간으로. 계산된 필드 -&gt; if else then 문<br />
+rank 함수를 사용하는것으로도 순위를 표현가능 -&gt; rank(필드)<br />
+datepart : datepart('부분',날짜)=int(매개변수)로 매개변수값이 datepart와 같은지를 확인. <br />
+필터를 넣었을 때 참 거짓으로 구분 가능. # 부분에는 'year','month' 등이 있다. <br />
+크기와 색깔 abs : 측정값의 차이로 색깔을. abs함수로 차이의 절댓값으로 크기를 알수 있다. <br />
+날짜 차이 : 날짜의 차이는 datediff로 구한다. 그런데 측정값으로 되니 차원을 바꿔준다.  <br />
+조건 if : if else를 iif 로 하면 편하다.<br />
+원래 값이 나오게. : lookup(attr(column),0) 이다.  </p>
+	</div>
+	<script src="https://utteranc.es/client.js" repo="98hyun/98hyun.github.io" issue-term="title" theme="github-light"
+    crossorigin="anonymous" async>
+    </script>
+
+        <h3 class="text-center">Social Platforms</h3>
+<div class="social text-center">
+    <a href="https://github.com/98hyun" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+    <a href="mailto:ckdckd01@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
+</div>
+    </div>
+</body>
+
+</html>

@@ -10,7 +10,7 @@ FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_MARKDOWN_EXTENSIONS = ['codehilite']
 FLATPAGES_EXTENSION_CONFIGS = {
-    'codehilite': {'linenums': True}
+    'codehilite': {'linenums': False}
 }
 
 app=Flask(__name__)
