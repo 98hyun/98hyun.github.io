@@ -1,5 +1,5 @@
 # library
-from flask import Flask, render_template
+from flask import Flask, render_template,redirect
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
 import sys
@@ -14,7 +14,7 @@ FLATPAGES_EXTENSION_CONFIGS = {
 }
 
 app=Flask(__name__)
-app.config.from_object(__name__)
+app.config.from_object(__name__) # 무슨뜻인지 모르겠다.
 pages=FlatPages(app)
 freezer=Freezer(app)
 
@@ -23,10 +23,6 @@ freezer=Freezer(app)
 def index():
     latest=sorted(pages,reverse=True,key=lambda p:p.meta["published"])
     return render_template("index.html",posts=latest[:5])
-
-@app.route("/about/")
-def about():
-	return render_template("about.html")
 
 @app.route("/tag/<string:tag>/")
 def tag(tag):
@@ -47,6 +43,10 @@ def page(path):
 def pygments():
     return pygments_style_defs(style='algol_nu'), 200, {'Content-Type':'text/css'}
 
+@app.route('/resume/')
+def resume():
+    return render_template('resume.html')
+    
 # main
 if __name__=="__main__":
     if len(sys.argv)>1 and sys.argv[1]=='build':

@@ -1,14 +1,19 @@
 {% extends "base.html" %}
 
 {% block content %}
-<img src="{{ url_for('static', filename='img/avatar.PNG') }}" class="avatar rounded img-thumbnail">
-<h3 class="text-center">Blog Posts</h3>
-    <div class="list-group container">
-        {% for post in posts %}
-            <a class="text-center list-group-item" href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a>
-        {% else %}
+<div style="margin:0px 400px">
+    <div style="padding-top: 50px;">
+        <h2>Recent Journey</h2>
+        <br>
+        <div class="list-group">
+            {% for post in posts %}
+            <a style="padding: 10px 0px;color:#2e3f59" class="text-center list-group-item"
+                href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a>
+            {% else %}
             <li>None</li>
-        {% endfor %}
-        <a class="text-center list-group-item" href="{{url_for('posts')}}">More</a>
+            {% endfor %}
+            <a style="padding: 10px 0px;color:#2e3f59" class="text-center list-group-item" href="{{url_for('posts')}}">More</a>
+        </div>
     </div>
+</div>
 {% endblock content %}

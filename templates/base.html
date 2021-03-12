@@ -2,26 +2,31 @@
 <html lang="en">
 
 <head>
+    <!--meta-->
     {% include "google.html" %}
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
     <link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}">
     <link rel="stylesheet" href="{{ url_for('pygments') }}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <title>Sep's</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+
+    <title>Anywhere</title>
 </head>
 
 <body>
-    <div class="container">
-        {% include "nav.html" %}
+    <div>
+        {% include "header.html" %}
         {% block content %}
         {% endblock content %}
-        {% include "social.html" %}
+        {% include "footer.html" %}
     </div>
 </body>
 
