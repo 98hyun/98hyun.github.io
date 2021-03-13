@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!--meta-->
     <!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
@@ -16,44 +17,53 @@
 </script>
 <!-- End Google Analytics -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
     <link rel="shortcut icon" href="/static/favicon.ico">
     <link rel="stylesheet" href="/pygments.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/static/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <title>Sep's</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+
+    <title>Anywhere</title>
 </head>
 
 <body>
-    <div class="container">
-        <ul class="nav justify-content-center">
-  <a class="nav-link" href="/">Home</a>
-  <a class="nav-link" href="/about/">About</a>
-</ul>
+    <div>
+        <header style="background-color: #2e3f59;height:240px;">
+    <div class="inner-header" style="margin:0px 400px">
+        <a href="/"><h1 style="margin-top: 40px;display:inline-block;color:azure;">Data Traveler</h1></a>
+        <h6 style="font-family: Arial;color:azure;">Tantum videmus quantum scimus</h6>
+        <a href="/resume.html" target="_blank"><i class="fas fa-id-card" style="font-size: 2rem;color:azure;padding:50px 5px 0px 0px;"></i></a>
+        <a href="https://github.com/98hyun" target="_blank"><i class="fab fa-github" style="font-size: 2rem;padding:50px 4px 0px 0px;color:azure;"></i></a>
+        <a href="mailto:ckdckd01@gmail.com" target="_blank"><i class="fas fa-envelope" style="font-size: 2rem;color:azure;padding:50px 5px 0px 0px;"></i></a>
+    </div>
+</header>
         
-	<div class="container post">
-		<hr>
-	    <h3>2021-01-31</h3>
-	    <p class="tag"><strong>Author:</strong> 98hyun</p>
-	    <p class="tag"><strong>Published:</strong> 2021-01-31</p>
-        <p class="tag">
+<div style="margin:0px 400px">
+<hr>
+<h3>2021-01-31</h3>
+<p class="tag"><strong>Author:</strong> 98hyun</p>
+<p class="tag"><strong>Published:</strong> 2021-01-31</p>
+<p class="tag">
 	
 	    <strong>Tags:</strong> 
 	    
-	        <a href="/tag/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/">개발환경 </a>    
+	        <a href="/tag/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD.html">개발환경</a>    
 	    
-	        <a href="/tag/%EA%B3%B5%EA%B0%84%EB%B6%84%EC%84%9D/">공간분석 </a>    
+	        <a href="/tag/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D.html">데이터분석</a>    
 	    
-	        <a href="/tag/%EC%8B%9C%EA%B0%81%ED%99%94/">시각화 </a>    
+	        <a href="/tag/%EC%8B%9C%EA%B0%81%ED%99%94.html">시각화</a>    
 	    
 	
 </p>
-        <hr>
-        <h2>개발환경</h2>
+<hr>
+<h2>개발환경</h2>
 
 <p>현재 컴퓨터 사양. 프로세서 인텔 코어 i3-7100U CPU 2.40GHz. RAM 8GB. 분석은 가능. 모델 돌리기 힘들다. 컴퓨터 깨끗하게 + docker 공부로 환경만들기. </p>
 <h4>docker</h4>
@@ -249,16 +259,32 @@ datepart : datepart('부분',날짜)=int(매개변수)로 매개변수값이 dat
 날짜 차이 : 날짜의 차이는 datediff로 구한다. 그런데 측정값으로 되니 차원을 바꿔준다.  <br />
 조건 if : if else를 iif 로 하면 편하다.<br />
 원래 값이 나오게. : lookup(attr(column),0) 이다.  </p>
-	</div>
-	<script src="https://utteranc.es/client.js" repo="98hyun/98hyun.github.io" issue-term="title" theme="github-light"
-    crossorigin="anonymous" async>
-    </script>
-
-        <h3 class="text-center">Social Platforms</h3>
-<div class="social text-center">
-    <a href="https://github.com/98hyun" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-    <a href="mailto:ckdckd01@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://hwangcanghyeon.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+
+        <footer style="padding-top: 100px;">
+    <div style="margin:0px 400px">
+        <h6>98hyun © 2021 Powered by Flask</h6>
+    </div>
+</footer>
     </div>
 </body>
 

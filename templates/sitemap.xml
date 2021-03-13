@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<!--pages-->
+  <url>
+    <loc>{{ base_url }}</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+<!--posts-->
+  {% for p in pages %}
+  <url>
+    <loc>{{ base_url }}posts/{{ p.path }}/</loc>
+  </url>
+  {% endfor %}
+</urlset>

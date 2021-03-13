@@ -1,3 +1,5 @@
+# Yearly
+
 <!--2020-->
 <h2><details>
 <summary>2020</summary>
@@ -16,5 +18,13 @@
 <li>20210131 : 원래 취지는 2주에 한번씩은 쓰자 이지만, 게을러서 한달이 됐고, 그렇게 하기로 했다.</li>
 <li>20210228 : 2월 글.</li>
 <li>20210312 : 블로그 theme 바꾸고. 컨셉 바꾸기. 댓글도 disqus로 바꿨다. pdf로 resume도 볼수있게 했다. resume만 준비하면 된다.</li>
+<li>20210313 : sitemap 설정.</li>
 </blockquote>
 </details></h2>
+
+<br>
+<br>
+
+# Todo 
+
+- [ ] rss feed. and make page `description` meta.

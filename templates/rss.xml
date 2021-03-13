@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Data Traveler</title>
+  <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
+  <link>{{ base_url }}</link>
+  <description>Data Traveler</description>
+  <lastBuildDate>{{ time.strftime('%Y-%m-%d %H:%M:%S %Z%z') }}</lastBuildDate>
+  <language>ko</language>
+    {% for page in pages %}
+    <item>
+    <title>{{ page.meta['title'] }}</title>
+    <link>{{ base_url }}posts/{{ page.path }}/</link>
+    <description>{{ page.meta['description'] }}</description>
+    <pubDate>{{ page.meta['published'].strftime('%Y-%m-%d') }}</pubDate>
+    </item>
+    {% endfor %}
+</channel>
+</rss>

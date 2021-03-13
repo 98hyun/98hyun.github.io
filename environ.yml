@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - certifi=2020.6.20=py36h9f0ad1d_0
+  - certifi=2020.12.5=py36ha15d459_1
   - click=7.1.2=pyh9f0ad1d_0
   - flask=1.1.2=pyh9f0ad1d_0
   - frozen-flask=0.15=py_1
@@ -14,6 +14,7 @@ dependencies:
   - pygments=2.6.1=py_0
   - python=3.6.10=h9f7ef89_2
   - python_abi=3.6=1_cp36m
+  - pytz=2021.1=pyhd8ed1ab_0
   - setuptools=49.6.0=py36_0
   - sqlite=3.33.0=h2a8f88b_0
   - vc=14.1=h0510ff6_4
@@ -28,4 +29,4 @@ dependencies:
     - markdown==3.2.2
     - pyyaml==5.3.1
     - zipp==3.1.0
-prefix: C:\miniconda\envs\handmade
+prefix: C:\Users\ckdck\miniconda3\envs\handmade
