@@ -53,10 +53,10 @@ def page(path):
 def pygments():
     return pygments_style_defs(style='algol_nu'), 200, {'Content-Type':'text/css'}
 
-# resume
-@app.route('/resume.html')
-def resume():
-    return render_template('resume.html')
+# # resume
+# @app.route('/resume.html')
+# def resume():
+#     return render_template('resume.html')
 
 # sitemap
 @app.route('/sitemap.xml')
