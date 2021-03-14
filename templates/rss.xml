@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Data Traveler</title>
-  <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
+  <atom:link href="https://98hyun.github.io/docs/rss.xml" rel="self" type="application/xml" />
   <link>{{ base_url }}</link>
   <description>Data Traveler</description>
   <lastBuildDate>{{ time.strftime('%Y-%m-%d %H:%M:%S %Z%z') }}</lastBuildDate>

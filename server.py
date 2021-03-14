@@ -25,59 +25,59 @@ freezer=Freezer(app)
 # URL Routing
 
 # homepage
-@app.route("/")
+@app.route("/docs/")
 def index():
     latest=sorted(pages,reverse=True,key=lambda p:p.meta["published"])
     return render_template("index.html",posts=latest[:5])
 
 # tags
-@app.route("/tag/<string:tag>.html")
+@app.route("/docs/tag/<string:tag>.html")
 def tag(tag):
     tags=[p for p in pages if tag in p.meta.get("tags",[])]
     return render_template("tag.html",tag=tag,pages=tags)
 
 # posts
-@app.route("/posts/")
+@app.route("/docs/posts/")
 def posts():
     posts=[p for p in pages]
     return render_template("post.html",pages=posts)
 
 # page
-@app.route("/posts/<path:path>.html")
+@app.route("/docs/posts/<path:path>.html")
 def page(path):
     page=pages.get_or_404(path)
     return render_template("page.html",page=page,pages=pages)
 
 # code highlight
-@app.route('/pygments.css')
+@app.route('/docs/pygments.css')
 def pygments():
     return pygments_style_defs(style='algol_nu'), 200, {'Content-Type':'text/css'}
 
 # # resume
-# @app.route('/resume.html')
+# @app.route('/docs/resume.html')
 # def resume():
 #     return render_template('resume.html')
 
 # sitemap
-@app.route('/sitemap.xml')
+@app.route('/docs/sitemap.xml')
 def sitemap():
     latest=sorted(pages,reverse=True,key=lambda p:p.meta['published'])
-    response=render_template('sitemap.xml',pages=latest,base_url='https://98hyun.github.io/')
+    response=render_template('sitemap.xml',pages=latest,base_url='https://98hyun.github.io/docs/')
     response=make_response(response)
     response.headers['Content-Type']='application/xml'
     return response
 
 # rss
-@app.route('/rss.xml')
+@app.route('/docs/rss.xml')
 def rss():
     latest=sorted(pages,reverse=True,key=lambda p:p.meta['published'])
-    res=render_template('rss.xml', pages=latest, time=datetime.now(timezone('Asia/Seoul')), base_url='https://98hyun.github.io/')
+    res=render_template('rss.xml', pages=latest, time=datetime.now(timezone('Asia/Seoul')), base_url='https://98hyun.github.io/docs/')
     response=make_response(res)
     response.headers['Content-Type']='application/xml'
     return response
 
 # robots.txt
-@app.route('/robots.txt')
+@app.route('/docs/robots.txt')
 def robots():
     return render_template("robots.html")
 
