@@ -16,6 +16,9 @@ FLATPAGES_EXTENSION_CONFIGS = {
     'codehilite': {'linenums': False}
 }
 
+# for gh-pages
+FREEZER_DESTINATION='docs'
+
 app=Flask(__name__)
 app.config['FREEZER_IGNORE_MIMETYPE_WARNINGS'] = True
 app.config.from_object(__name__) # 무슨뜻인지 모르겠다.
@@ -53,10 +56,10 @@ def page(path):
 def pygments():
     return pygments_style_defs(style='algol_nu'), 200, {'Content-Type':'text/css'}
 
-# resume
-@app.route('/resume.html')
-def resume():
-    return render_template('resume.html')
+# # resume
+# @app.route('/resume.html')
+# def resume():
+#     return render_template('resume.html')
 
 # sitemap
 @app.route('/sitemap.xml')
