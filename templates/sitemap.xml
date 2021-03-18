@@ -8,7 +8,7 @@
 <!--posts-->
   {% for p in pages %}
   <url>
-    <loc>{{ base_url }}posts/{{ p.path }}/</loc>
+    <loc>{{ base_url }}posts/{{ p.path }}.html</loc>
   </url>
   {% endfor %}
 </urlset>

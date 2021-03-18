@@ -5,26 +5,26 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2021-03-14 11:26:27 KST+0900</lastBuildDate>
+  <lastBuildDate>2021-03-18 19:06:44 KST+0900</lastBuildDate>
   <language>ko</language>
     
     <item>
     <title>2021-02-28</title>
-    <link>https://98hyun.github.io/posts/20210228/</link>
+    <link>https://98hyun.github.io/posts/20210228.html</link>
     <description>데이터를 찾아다니며 여행하면서 안 tip들을 적었다.</description>
     <pubDate>2021-02-28</pubDate>
     </item>
     
     <item>
     <title>2021-01-31</title>
-    <link>https://98hyun.github.io/posts/20210131/</link>
+    <link>https://98hyun.github.io/posts/20210131.html</link>
     <description>처음 개발환경을 소개하고, 공간분석을 해서 api를 통한 위도 경도 변경을 다룬다. 또, tableau와 시각화의 개념을 다룬다.</description>
     <pubDate>2021-01-31</pubDate>
     </item>
     
     <item>
     <title>2020을 보내며.</title>
-    <link>https://98hyun.github.io/posts/20201231/</link>
+    <link>https://98hyun.github.io/posts/20201231.html</link>
     <description>데이터 분석. 특히, 시각화와 eda에 관심이 많다. 기술을 잘 하는것과 개념과 잘 응용하는것의 차이를 느꼈다. 앞으로 어떻게 공부했고, 또 어떻게 공부해 갈지 방향을 정한 회고다.</description>
     <pubDate>2020-12-31</pubDate>
     </item>

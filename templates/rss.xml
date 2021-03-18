@@ -10,7 +10,7 @@
     {% for page in pages %}
     <item>
     <title>{{ page.meta['title'] }}</title>
-    <link>{{ base_url }}posts/{{ page.path }}/</link>
+    <link>{{ base_url }}posts/{{ page.path }}.html</link>
     <description>{{ page.meta['description'] }}</description>
     <pubDate>{{ page.meta['published'].strftime('%Y-%m-%d') }}</pubDate>
     </item>
