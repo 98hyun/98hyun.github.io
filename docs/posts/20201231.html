@@ -19,6 +19,9 @@
     <meta property="og:title" content="Data Traveler - 데이터 관련 tech 블로그" />
     <meta property="og:description" content="데이터분석 및 시각화 기술을 다루고 그 외에 tech 개념과 기술을 설명하는 블로그입니다."/>
     <!--css-->
+    
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
     <link rel="shortcut icon" href="/static/favicon.ico">
     <link rel="stylesheet" href="/pygments.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -45,11 +48,11 @@
 </header>
         
 <div style="margin:0px 400px">
-<hr>
-<h3>2020을 보내며.</h3>
-<p class="tag"><strong>Author:</strong> 98hyun</p>
-<p class="tag"><strong>Published:</strong> 2020-12-31</p>
-<p class="tag">
+    <hr>
+    <h3>2020을 보내며.</h3>
+    <p class="tag"><strong>Author:</strong> 98hyun</p>
+    <p class="tag"><strong>Published:</strong> 2020-12-31</p>
+    <p class="tag">
 	
 	    <strong>Tags:</strong> 
 	    
@@ -57,8 +60,8 @@
 	    
 	
 </p>
-<hr>
-<h2>2020년을 보내며 스스로 돌아보는 회고.</h2>
+    <hr>
+    <h2>2020년을 보내며 스스로 돌아보는 회고.</h2>
 
 <p>2020년 코로나로 일년이 어떻게 지나갔는지. <br />
 그동안 <code>무슨 활동</code>을 했고, <code>앞으로 어떻게 할건지</code>에 대해서 스스로를 평가하는 글이다.  <br/><br/></p>
@@ -133,7 +136,7 @@ nipa 데이터 분석 입문 캠프에서 퀴즈 2등을 해서 아쉽게 아이
 어떤걸 좋아하는지. 어떻게 살고 싶은지. 나에 대해서 관심이 적었던 것 같다.<br/> 
 뭔갈 그저. 이유없이 하는것 보다 하고싶어서 하는. 그런 약속을 21년에도 이어가고 싶다. <br/>
 글쓰기도 연습하고 싶다. 하고 싶은게 많다. 이것저것 다 해보고 싶다. <br/></p>
-<div id="disqus_thread"></div>
+    <!-- <div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -151,8 +154,24 @@ nipa 데이터 분석 입문 캠프에서 퀴즈 2등을 해서 아쉽게 아이
     (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+    <div id="gitalk-container"></div>
 </div>
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '3018d6b96551fc7b58a8',
+        clientSecret: 'c76a04745877b79b4676fe6c5a87d409eab0aa21',
+        repo: '98hyun.github.io', // The repository of store comments,
+        owner: '98hyun',
+        admin: ['98hyun'],
+        id: location.pathname, // Ensure uniqueness and length less than 50
+        distractionFreeMode: true // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
 
         <footer style="padding-top: 100px;">
     <div style="margin:0px 400px">
