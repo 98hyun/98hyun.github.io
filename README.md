@@ -19,6 +19,7 @@
 <li>20210228 : 2월 글.</li>
 <li>20210312 : 블로그 theme 바꾸고. 컨셉 바꾸기. 댓글도 disqus로 바꿨다. pdf로 resume도 볼수있게 했다. resume만 준비하면 된다.</li>
 <li>20210313 : sitemap.xml, rss.xml, robots.txt 설정.</li>
+<li>20210318 : 경로 정리. 검색 엔진 최적화.</li>
 </blockquote>
 </details></h2>
 
