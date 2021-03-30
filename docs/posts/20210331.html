@@ -3,23 +3,25 @@
 
 <head>
     <!--meta-->
-    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164778559-1"></script>
 <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    ga('create', 'UA-164778559-1', 'auto');
-    ga('send', 'pageview');
+  gtag('config', 'UA-164778559-1');
 </script>
-<!-- End Google Analytics -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="데이터분석 및 시각화 기술을 다루고 그 외에 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <meta property="og:title" content="Data Traveler - 데이터 관련 tech 블로그" />
+    <meta property="og:description" content="데이터분석 및 시각화 기술을 다루고 그 외에 tech 개념과 기술을 설명하는 블로그입니다."/>
     <!--css-->
+    
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
     <link rel="shortcut icon" href="/static/favicon.ico">
     <link rel="stylesheet" href="/pygments.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -46,11 +48,11 @@
 </header>
         
 <div style="margin:0px 400px">
-<hr>
-<h3>2021-03-31</h3>
-<p class="tag"><strong>Author:</strong> 98hyun</p>
-<p class="tag"><strong>Published:</strong> 2021-03-31</p>
-<p class="tag">
+    <hr>
+    <h3>2021-03-31</h3>
+    <p class="tag"><strong>Author:</strong> 98hyun</p>
+    <p class="tag"><strong>Published:</strong> 2021-03-31</p>
+    <p class="tag">
 	
 	    <strong>Tags:</strong> 
 	    
@@ -62,8 +64,8 @@
 	    
 	
 </p>
-<hr>
-<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"> </span> &nbsp; 정규표현식과 NLP</h3>
+    <hr>
+    <h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"> </span> &nbsp; 정규표현식과 NLP</h3>
 
 <p>규칙과 함수가 있다면 빠르게 접근 가능하다.  </p>
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
@@ -546,26 +548,23 @@ git merge origin/master
 # rebase - 한줄로 합치기(local에서는 깔끔하게 하기 위해 ) 자기 마음.
 git rebase origin/master 
 </pre>
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://hwangcanghyeon.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div id="gitalk-container"></div>
 </div>
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '3018d6b96551fc7b58a8',
+        clientSecret: 'c76a04745877b79b4676fe6c5a87d409eab0aa21',
+        repo: '98hyun.github.io', // The repository of store comments,
+        owner: '98hyun',
+        admin: ['98hyun'],
+        id: location.pathname, // Ensure uniqueness and length less than 50
+        distractionFreeMode: true // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+</script>
 
         <footer style="padding-top: 100px;">
     <div style="margin:0px 400px">

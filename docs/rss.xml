@@ -5,12 +5,12 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2021-03-31 00:39:16 KST+0900</lastBuildDate>
+  <lastBuildDate>2021-03-31 00:52:12 KST+0900</lastBuildDate>
   <language>ko</language>
     
     <item>
     <title>2021-03-31</title>
-    <link>https://98hyun.github.io/posts/20210331/</link>
+    <link>https://98hyun.github.io/posts/20210331.html</link>
     <description>정규표현식과 NLP에 대해서 간단하게 공부했다. 4월에 bert와 fasttext를 소개할 생각이다. python문법, latex, html symbols와 emoji에 대해 간단히 언급한다. 이번 3월의 공부는 통계를 많이 공부했다. modality와 qqplot, 정규화를 코드로 보여준다. matplotlib 그리고 matplotlib에 글과 그림을 figure안에 표현하는 방법을 소개한다. 맥북의 vim과 terminal 단축키를 공부했다. 그러며서 git branch에서 막히는 특정 상황에 대한 해결책도 공부했다.</description>
     <pubDate>2021-03-31</pubDate>
     </item>
