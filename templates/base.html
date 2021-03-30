@@ -11,6 +11,7 @@
     <meta property="og:title" content="Data Traveler - 데이터 관련 tech 블로그" />
     <meta property="og:description" content="데이터분석 및 시각화 기술을 다루고 그 외에 tech 개념과 기술을 설명하는 블로그입니다."/>
     <!--css-->
+    {% block head %}{% endblock %}
     <link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}">
     <link rel="stylesheet" href="{{ url_for('pygments') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,7 +29,7 @@
     <div>
         {% include "header.html" %}
         {% block content %}
-        {% endblock content %}
+        {% endblock %}
         {% include "footer.html" %}
     </div>
 </body>
