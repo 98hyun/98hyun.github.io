@@ -1,7 +1,7 @@
 # Yearly
 
 <!--2020-->
-<h2><details>
+<h3><details>
 <summary>2020</summary>
 <blockquote>
 <li>20200902 : 처음 jekyll 블로그 시작. 기록이 없지만, 첫 글.</li>
@@ -10,9 +10,9 @@
 <li>20201103 : 댓글 utterance 삽입.</li>
 <li>20201231 : 회고 및 블로그 방향성에 대해서. 다시 시작.</li>
 </blockquote>
-</details></h2>
+</details></h3>
 <!--2021-->
-<h2><details>
+<h3><details>
 <summary>2021</summary>
 <blockquote>
 <li>20210131 : 원래 취지는 2주에 한번씩은 쓰자 이지만, 게을러서 한달이 됐고, 그렇게 하기로 했다.</li>
@@ -22,7 +22,7 @@
 <li>20210318 : 경로 정리. 검색 엔진 최적화.</li>
 <li>20210331 : gitalk 댓글 설정.</li>
 </blockquote>
-</details></h2>
+</details></h3>
 
 <br>
 <br>
