@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2021-03-31 00:52:12 KST+0900</lastBuildDate>
+  <lastBuildDate>2021-04-30 22:54:06 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2021-04-30</title>
+    <link>https://98hyun.github.io/posts/20210430.html</link>
+    <description>kakao api를 통한 위,경도 추출법과 그 반대를 업데이트했다. 또한, colab에서 kaggle api를 사용하는 방법을 다룬다. bert와 fasttext를 통해 nlp를 방식을 들여다본다. clustering을 알아보고 잘 분류됐는지 silhouette score를 구한다. 시계열 분석 방법을 순차적으로 보여준다. 다익스트라 알고리즘과 a*알고리즘을 통해 최단거리 알고리즘을 공부했다. database와 함께 sql을 공부했다. sql에서는 sqlite3와 google bigquery를 python을 통해 다루는 것을 볼 수 있다. 분류 목적함수를 공부하고, lift와 logloss도 공부한다.</description>
+    <pubDate>2021-04-30</pubDate>
+    </item>
     
     <item>
     <title>2021-03-31</title>

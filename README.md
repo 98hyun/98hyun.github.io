@@ -21,6 +21,7 @@
 <li>20210313 : sitemap.xml, rss.xml, robots.txt 설정.</li>
 <li>20210318 : 경로 정리. 검색 엔진 최적화.</li>
 <li>20210331 : gitalk 댓글 설정.</li>
+<li>20210430 : 4월 글.</li>
 </blockquote>
 </details></h3>
 

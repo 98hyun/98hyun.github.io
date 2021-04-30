@@ -79,7 +79,6 @@
 <span class="n">jupyter</span> <span class="n">notebook</span> <span class="o">--</span><span class="n">ip</span> <span class="mf">0.0</span><span class="o">.</span><span class="mf">0.0</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">browser</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">root</span>
 </code></pre></div>
 
-
 <h3>miniconda</h3>
 
 <p>필요한 라이브러리. 느낌대로.</p>
@@ -90,7 +89,6 @@
 <span class="c1"># 채널은 conda-forge 에서만. 제일 믿음직스러운. </span>
 <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">numpy</span> <span class="n">pandas</span> <span class="n">matplotlib</span> <span class="n">seaborn</span> <span class="n">requests</span> <span class="n">bs4</span> <span class="n">selenium</span> <span class="n">notebook</span>
 </code></pre></div>
-
 
 <h4>VS Code</h4>
 
@@ -124,20 +122,19 @@ google : https://cloud.google.com/</p>
 <span class="n">rest_api_key</span> <span class="o">=</span> <span class="s1">&#39;********************************&#39;</span>  
 <span class="n">header</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="s1">&#39;KakaoAK &#39;</span> <span class="o">+</span> <span class="n">rest_api_key</span><span class="p">}</span>
 
-<span class="c1"># 위.경도 longitude(long) 롱이니까 경도라고 외우면 쉽다.   </span>
-<span class="n">x</span><span class="o">=</span><span class="mf">127.1268</span> <span class="c1"># 단국대 lon 구글 스크래핑.  </span>
-<span class="n">y</span><span class="o">=</span><span class="mf">37.3216</span>  <span class="c1"># 단국대 lat</span>
-
+<span class="c1"># ----------------------- update -------------------------</span>
 <span class="c1"># 요청 주소</span>
-<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://dapi.kakao.com/v2/local/search/address.json?query=</span><span class="si">{</span><span class="n">address</span><span class="si">}</span><span class="s1">&#39;</span>
+<span class="c1"># address 보다 keyword가 더 광범위하게 캐치한다.</span>
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://dapi.kakao.com/v2/local/search/keyword.json?query=</span><span class="si">{</span><span class="n">address</span><span class="si">}</span><span class="s1">&#39;</span>
 
 <span class="c1"># 결과값</span>
 <span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">header</span><span class="p">)</span>  
 <span class="n">res</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;documents&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;address&#39;</span><span class="p">])</span>
+<span class="c1"># ----------------------- update -------------------------</span>
+<span class="n">match</span><span class="o">=</span><span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;documents&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]),</span><span class="nb">float</span><span class="p">(</span><span class="n">match</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]))</span> <span class="c1"># 위도, 경도</span>
 
-<span class="p">:::</span><span class="n">python</span>
 <span class="c1"># google</span>
 
 <span class="c1"># library  </span>
@@ -156,7 +153,6 @@ google : https://cloud.google.com/</p>
 <span class="n">lat</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;geometry&#39;</span><span class="p">][</span><span class="s1">&#39;location&#39;</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span>
 <span class="n">lng</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;geometry&#39;</span><span class="p">][</span><span class="s1">&#39;location&#39;</span><span class="p">][</span><span class="s1">&#39;lng&#39;</span><span class="p">]</span>
 </code></pre></div>
-
 
 <h4>위.경도를 주소로 변환.</h4>
 
@@ -185,8 +181,6 @@ google : https://cloud.google.com/</p>
 <span class="c1"># 경기도 용인시 수지구 죽전동  </span>
 <span class="c1"># res 는 결과값으로 dictionary 형태로 주어져서 res를 print 해서 원하는것을 파싱하면 된다.</span>
 
-
-<span class="p">:::</span><span class="n">python</span> 
 <span class="c1"># google</span>
 
 <span class="c1"># library  </span>
@@ -203,7 +197,6 @@ google : https://cloud.google.com/</p>
 <span class="n">g</span><span class="o">=</span><span class="n">gmaps</span><span class="o">.</span><span class="n">reverse_geocode</span><span class="p">((</span><span class="n">j</span><span class="o">.</span><span class="n">lat</span><span class="p">,</span> <span class="n">j</span><span class="o">.</span><span class="n">lon</span><span class="p">),</span><span class="n">language</span><span class="o">=</span><span class="s1">&#39;ko&#39;</span><span class="p">)</span>
 <span class="n">geo_str</span><span class="o">=</span><span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;formatted_address&#39;</span><span class="p">]</span>
 </code></pre></div>
-
 
 <h2>시각화와 tableau</h2>
 
