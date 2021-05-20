@@ -25,6 +25,7 @@
 <li>20210517 : add rss feed feature</li>
 <li>20210518 : valine comment system</li>
 <li>20210519 : resume embed in web</li>
+<li>20210520 : 공유하기 기능 (kakao,naver)</li>
 </blockquote>
 </details></h3>
 

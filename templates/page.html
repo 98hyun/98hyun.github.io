@@ -3,6 +3,8 @@
 {% block head %}
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='js/share.js' )}}"></script>
 {% endblock %}
 
 {% block content %}
@@ -12,8 +14,10 @@
     <p class="tag"><strong>Author:</strong> {{ page.author }}</p>
     <p class="tag"><strong>Published:</strong> {{ page.published }}</p>
     {% include "list.html" %}
+    {% include "share.html" %}
     <hr>
     {{page.html|safe}}
+
     <div id="vcomment"></div>
 </div>
 
@@ -22,7 +26,7 @@
         el: '#vcomment',
         appId: 'pMCP910pdFNjniAUKmcPWSzx-MdYXbMMI',
         appKey: 'kywgNcY0JmhAJ5UxQ1yPMl6c',
-        meta: ['nick','mail'],
+        meta: ['nick', 'mail'],
         lang: 'en',
         pageSize: 7
     });
