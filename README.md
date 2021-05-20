@@ -22,12 +22,11 @@
 <li>20210318 : 경로 정리. 검색 엔진 최적화.</li>
 <li>20210331 : gitalk 댓글 설정.</li>
 <li>20210430 : 4월 글.</li>
+<li>20210517 : add rss feed feature</li>
+<li>20210518 : valine comment system</li>
+<li>20210519 : resume embed in web</li>
 </blockquote>
 </details></h3>
 
 <br>
 <br>
-
-<h1>Todo</h1>
-
-- [ ] &nbsp; resume

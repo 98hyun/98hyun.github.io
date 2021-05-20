@@ -1,24 +1,18 @@
-# 0.
+# 우선순위
+# 0. 
 
-matplotlib 3d
-plotly.
+flask todo - heroku
 
 # 1. 
 
 figma
-tableau 
+tableau
 
 # 2.
 
-dockerfile 정리.
-docker https://subicura.com/2017/02/10/docker-guide-for-beginners-create-image-and-deploy.html
-seaborn 
-folium
+django 
 
 # 3.
 
-2d->image 전이학 
-django 
 blockchain 
 postman 
-streamlit
