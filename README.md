@@ -22,6 +22,7 @@
 <li>20210318 : 경로 정리. 검색 엔진 최적화.</li>
 <li>20210331 : gitalk 댓글 설정.</li>
 <li>20210430 : 4월 글.</li>
+<li>20210520 : 공유하기 기능 (kakao,naver)</li>
 </blockquote>
 </details></h3>
 
