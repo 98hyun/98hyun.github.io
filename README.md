@@ -26,6 +26,7 @@
 <li>20210518 : valine comment system</li>
 <li>20210519 : resume embed in web</li>
 <li>20210520 : 공유하기 기능 (kakao,naver)</li>
+<li>20210523 : google tag manager, google analytics</li>
 </blockquote>
 </details></h3>
 

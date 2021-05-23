@@ -2,6 +2,8 @@
 # 0. 
 
 flask todo - heroku
+google analytics, google tag manager.
+autoviz
 
 # 1. 
 
