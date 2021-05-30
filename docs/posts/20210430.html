@@ -2,48 +2,69 @@
 <html lang="en">
 
 <head>
-    <!--meta-->
+    <!-- meta & google -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164778559-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'UA-164778559-1');
 </script>
+<!-- end google analytics -->
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MX6VS7T');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="데이터분석 및 시각화 기술을 다루고 그 외에 tech 개념과 기술을 설명하는 블로그입니다."/>
-    <meta property="og:title" content="Data Traveler - 데이터 관련 tech 블로그" />
-    <meta property="og:description" content="데이터분석 및 시각화 기술을 다루고 그 외에 tech 개념과 기술을 설명하는 블로그입니다."/>
-    <!--css-->
-    
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-
-    <link rel="shortcut icon" href="/static/favicon.ico">
+    <meta name="description" content="데이터분석 및 시각화 기술을 다루고 다른 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <meta property="og:title" content="Data Traveler - Data Tech Blog" />
+    <meta property="og:image" content="https://ifh.cc/g/wRy7wk.png" />
+    <meta property="og:description" content="데이터분석 및 시각화 기술을 다루고 다른 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <!-- css -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
     <link rel="stylesheet" href="/pygments.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/static/style.css">
-    <!--font-->
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <!-- js -->
+    
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script type="text/javascript" src="/static/js/share.js"></script>
 
     <title>Anywhere</title>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div>
         <header style="background-color: #2e3f59;height:240px;">
     <div class="inner-header" style="margin:0px 400px">
         <a href="/"><h1 style="margin-top: 40px;display:inline-block;color:azure;">Data Traveler</h1></a>
         <h6 style="font-family: Arial;color:azure;">Tantum videmus quantum scimus</h6>
-        <a href="#" target="_blank"><i class="fas fa-id-card" style="font-size: 2rem;color:azure;padding:50px 5px 0px 0px;"></i></a>
+        <a href="/resume.html" target="_blank"><i class="fas fa-id-card" style="font-size: 2rem;color:azure;padding:50px 3px 0px 0px;"></i></a>
         <a href="https://github.com/98hyun" target="_blank"><i class="fab fa-github" style="font-size: 2rem;padding:50px 4px 0px 0px;color:azure;"></i></a>
         <a href="mailto:ckdckd01@gmail.com" target="_blank"><i class="fas fa-envelope" style="font-size: 2rem;color:azure;padding:50px 5px 0px 0px;"></i></a>
+        <a href="https://98hyun.github.io/rss.xml" target="_blank"><i class="fas fa-rss" style="font-size: 2rem;color:azure;padding:50px 5px 0px 0px;"></i></a>
     </div>
 </header>
         
@@ -68,6 +89,24 @@
 	    
 	
 </p>
+    
+<p><strong>Share : 
+    <span>
+        <a id="kakao-link-btn" href="javascript:kakao()">
+            <img width="40" height="40" 
+                src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+        </a>
+    </span>
+    <span>
+        <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+        <script type="text/javascript">
+            new ShareNaver.makeButton({
+                "type": "f", "title": document.querySelector('meta[property="og:title"]')["content"],
+                "url": window.location.href });
+        </script>
+    </span>
+</strong></p>
+
     <hr>
     <h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; 20210131 post update</h3>
 
@@ -571,6 +610,8 @@ database에서 중요한 ERD를 그려봤다. 예제는 사원과 부서를 그�
 <p><br></p>
 <h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; 분류 목적함수</h3>
 
+<p>--update-- </p>
+<p>모델 평가도에서 사용해야 하는 기준들을 코드로 정리했다. </p>
 <p>손실함수가 최소화/최대화 되는 목적함수
 분류가 잘됐는지 확인하는 목적 함수를 잘 설정해야 모델이 학습을 잘 할 것이다.  </p>
 <p>아래는 테이블로 표현한 분류표이다. </p>
@@ -605,6 +646,44 @@ database에서 중요한 ERD를 그려봤다. 예제는 사원과 부서를 그�
     </tbody>
 </table>
 
+<details><summary>code</summary><blockquote><pre><code>
+
+from sklearn.metrics import confusion_matrix
+
+y_true=[0,0,0,1,1,1,1,1]
+y_pred=[0,1,0,1,0,1,0,1]
+
+tn,fp,fn,tp=confusion_matrix(y_true,y_pred).ravel()
+
+## 특이도(specificity)
+## 실제 음성 중 맞춘 음성의 수
+spec=tn/(fp+tn)
+## 민감도(sensitivity)
+## 실제 양성 중 맞춘 양성의 수 
+sens=tp/(tp+fn)
+## 정밀도(precision)
+## 양성이라고 예측한 것 중 맞춘 양성의 수
+prec=tp/(tp+fp)
+## 재현율(recall)
+## 실제 양성 중 맞춘 양성의 수 (민감도와 같다.)
+recall=tp/(tp+fn)
+
+## 왜 이렇게 많은 기준이 필요할까? 
+## 이해하기 쉬운 예를 들어 설명한다.
+## 의사A는 환자B가 병에 걸렸는지 확인하기 위해서 예측을 했다. 
+## 문제는 예측이 틀린 것이다. 이때, 진짜 병에 걸렸는데 안걸렸다고 하는게 위험한가, 병에 안걸렸는데 걸렸다고 하는것이 위험한가? 
+## 여기서 실제 양성인데 음성이라고 잘못 판단하는 것을 2종오류
+## 실제 음성인데 양성이라고 잘못 판단하는 것을 1종오류라고 한다. 
+## 위의 정답은 1종오류보다 2종오류가 더 위험하다는 것이다.
+
+## 분류하는 모델을 평가하기 위한 기준이 많은 이유는 특정 상황에 맞게 해야하기 때문이다.
+## 위와 같이 병에 대해서 얘기할때에는 모델의 정확도가 높으면서 fp를 줄여야 하는것이다.
+
+## 이를 보완하기 위해서 precision과 recall을 같이 봐야한다. 
+## 정밀도를 높이면 재현율이 낮아지는, trade-off 관계에 있다. 
+## 그래서 precision과 recall을 같이 보는 f1-score도 있다.(조화평균)
+</code></pre></blockquote></details>
+
 <p><br></p>
 <h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; lift 점수</h3>
 
@@ -634,22 +713,19 @@ def auc(pred,true):
 </code></pre></blockquote></details>
 
 <p><br></p>
-    <div id="gitalk-container"></div>
+
+    <div id="vcomment"></div>
 </div>
 
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
-    const gitalk = new Gitalk({
-        clientID: '3018d6b96551fc7b58a8',
-        clientSecret: 'c76a04745877b79b4676fe6c5a87d409eab0aa21',
-        repo: '98hyun.github.io', // The repository of store comments,
-        owner: '98hyun',
-        admin: ['98hyun'],
-        id: location.pathname, // Ensure uniqueness and length less than 50
-        distractionFreeMode: true // Facebook-like distraction free mode
-    })
-
-    gitalk.render('gitalk-container')
+    new Valine({
+        el: '#vcomment',
+        appId: 'pMCP910pdFNjniAUKmcPWSzx-MdYXbMMI',
+        appKey: 'kywgNcY0JmhAJ5UxQ1yPMl6c',
+        meta: ['nick', 'mail'],
+        lang: 'en',
+        pageSize: 7
+    });
 </script>
 
         <footer style="padding-top: 100px;">
