@@ -1,7 +1,7 @@
 # 우선순위
 # 0. 
 
-google analytics, google tag manager.
+google analytics, google tag manager
 
 # 1. 
 

@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2021-05-31 07:58:28 KST+0900</lastBuildDate>
+  <lastBuildDate>2021-06-30 10:18:34 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2021-06-30</title>
+    <link>https://98hyun.github.io/posts/20210630.html</link>
+    <description>git 기능 중 stash 와 merge에 대해서 포스팅했다. stash를 통해 작업하고 있는 환경을 임시저장하고 새로운 컴퓨터로 옮기는 상황과 merge를 통해 기존의 작업내용 및 새로운 작업내용 중 어느 하나의 모든것을 수용하는 상황을 적었다. 선형대수학 내용을 조금 다룬다. 선형변환을 통해 위키피디아에서 가져온 2020년 대한민국 인구수를 예측하고 검증한다. 또한, 특이값 분해를 통해 이미지를 압축하는 코드를 포스팅했다. pywaffle chart를 통해 비율을 나타내는 시각화를 진행했고, fontawesome 무료 icon을 활용한 방법도 적었다. 뉴스를 긁어오는 라이브러리가 있어 구현해봤다. 한글욕설필터와 u2net을 활용한 딥러닝 미니 프로젝트를 colab에서 진행했다. 가볍게 구현할 수 있고, 저작권에도 문제없어 github에서 가져와봤다. 지난번 포스팅(20210531)에서 pyupbit를 활용하여 자동매매를 돌리는 것을 학교 프로젝트로 해봤는데 결과는 안좋았다. 아쉬운대로 새로운 방법(bollinger band와 골든크로스전략)을 공부하여 기록했다.</description>
+    <pubDate>2021-06-30</pubDate>
+    </item>
     
     <item>
     <title>2021-05-31</title>

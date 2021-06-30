@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164778559-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164778559-1');
+</script>
+<!-- end google analytics -->
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MX6VS7T');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="데이터분석 및 시각화 기술을 다루고 다른 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <meta property="og:title" content="Data Traveler - Data Tech Blog" />
+    <meta property="og:image" content="https://ifh.cc/g/wRy7wk.png" />
+    <meta property="og:description" content="데이터분석 및 시각화 기술을 다루고 다른 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <meta name="naver-site-verification" content="9587fb2e71e511ea1c87a0881159739147ed08cc" />
+    <!-- css -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="/pygments.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <!-- js -->
+    
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script type="text/javascript" src="/static/js/share.js"></script>
+
+    <title>Anywhere</title>
+    <!-- Facebook Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3013594735526406');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=3013594735526406&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX6VS7T" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div>
+        <header style="background-color: #2e3f59;height:240px;">
+    <div class="inner-header" style="margin:0px 400px">
+        <a href="/"><h1 style="margin-top: 40px;display:inline-block;color:azure;">Data Traveler</h1></a>
+        <h6 style="font-family: Arial;color:azure;">Tantum videmus quantum scimus</h6>
+        <a href="/resume.html" target="_blank"><i class="fas fa-id-card" style="font-size: 2rem;color:azure;padding:50px 3px 0px 0px;"></i></a>
+        <a href="https://github.com/98hyun" target="_blank"><i class="fab fa-github" style="font-size: 2rem;padding:50px 4px 0px 0px;color:azure;"></i></a>
+        <a href="mailto:ckdckd01@gmail.com" target="_blank"><i class="fas fa-envelope" style="font-size: 2rem;color:azure;padding:50px 5px 0px 0px;"></i></a>
+        <a href="https://98hyun.github.io/rss.xml" target="_blank"><i class="fas fa-rss" style="font-size: 2rem;color:azure;padding:50px 5px 0px 0px;"></i></a>
+    </div>
+</header>
+        
+<div style="margin:0px 400px">
+    <hr>
+    <h3>2021-06-30</h3>
+    <p class="tag"><strong>Author:</strong> 98hyun</p>
+    <p class="tag"><strong>Published:</strong> 2021-06-30</p>
+    <p class="tag">
+	
+	    <strong>Tags:</strong> 
+	    
+	        <a href="/tag/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD.html">개발환경</a>    
+	    
+	        <a href="/tag/%EB%94%A5%EB%9F%AC%EB%8B%9D.html">딥러닝</a>    
+	    
+	        <a href="/tag/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D.html">데이터분석</a>    
+	    
+	
+</p>
+    
+<p><strong>Share : 
+    <span>
+        <a id="kakao-link-btn" href="javascript:kakao()">
+            <img width="40" height="40" 
+                src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+        </a>
+    </span>
+    <span>
+        <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+        <script type="text/javascript">
+            new ShareNaver.makeButton({
+                "type": "f", "title": document.querySelector('meta[property="og:title"]')["content"],
+                "url": window.location.href });
+        </script>
+    </span>
+</strong></p>
+
+    <hr>
+    <h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; stash와 merge </h3>
+
+<p>git에 대한 얘기다. 본인은 맥노트북과 윈도우노트북 두개를 사용한다.<br />
+그래서 생각난 것들을 기록하고 옮기면서 저장하고 있는데 계속 저장하는것에 불편함을 느끼고 한번에 하고싶어졌다.<br />
+역시 찾아보니 다 있었다. stash(임시저장) 기능과 merge 중에서도 --strategy-option 기능이다.   </p>
+<details><summary>git code</summary><blockquote><pre><code>
+
+## stash는 처음 commit이 이루어져야 가능하다. 
+## 즉, 수정하고 commit하기에는 내용이 부실하고 그렇다고 버리고 가자니 신경 쓰일 때 사용한다. 
+## 참고 https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Stashing%EA%B3%BC-Cleaning
+
+git stash push - 임시저장
+git stash apply - 다시 불러오기 
+git stash drop stash@{index} - 사용된 stash 버리기
+
+## merge는 기준이 있다. origin에 dev를 합치고 싶다면 git merge dev다. 당연히 branch는 origin에두고.  
+## 상황을 예로 들어 보겠다. 
+
+## 1번상황.
+## 현재 a컴퓨터로 작업하고 있고 마지막으로 모든것이 저장된 branch를 새로운 b컴퓨터에서 합치고 push 한다.
+
+a 컴퓨터 : git push origin draft (draft branch를 push)
+b 컴퓨터 : git merge remotes/origin/draft (draft branch 가져오기)
+b 컴퓨터 : git checkout master (b컴퓨터의 master branch로 checkout)
+b 컴퓨터 : git merge draft --strategy-option theirs (모든 conflict incoming으로 수용.)
+## 만약 b컴퓨터의 당시 모습 그대로를 유지하고 싶다면 theirs 대신 ours. 
+
+## 2번상황.
+## 현재 a컴퓨터에서 작업하고 있는 draft branch에서 dev branch로 넘어가고 싶지만, commit하기 아까울때. 
+
+a 컴퓨터 : git stash push
+a 컴퓨터 : git checkout dev 작업후.. git checkout draft
+a 컴퓨터 : git stash apply stash@{index} (git stash list로 index 확인.)
+a 컴퓨터 : git stash drop stash@{index}
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; 선형변환 </h3>
+
+<p>선형대수학에서 중요한 개념 중 하나인 선형변환. 벡터 공간(m차원)에서 벡터 공간(n차원)으로 바꿔주는 함수 이렇게 생각하면 된다. Ax=b에서 x가 선형변환 역할을 하는 함수라고 생각하면 된다. 예를 들어 CxM table의 A가 CxN table의 b가 되려면 M차원에서 N차원으로 바꿔는 x가 MxN의 행렬이 되어야한다.   </p>
+<p>하고 싶은 얘기는 행렬도 선형변환의 역할을 한다. 기하학적으로 보면 그렇다.  </p>
+<p>즉, Ax=b에서 x를 구하려면 x=A+b로 구할 수 있다. A가 정방행렬인 경우 A+는 A-1과 같다.하지만, 정방행렬이 아닌경우 앞에 전치행렬 AT를 곱해준 후 (ATA)-1을 곱해준다. 그러면 x=(ATA)ATb 가 된다. 즉, (ATA)AT 가 A+가 된다. </p>
+<p><a href="https://darkpgmr.tistory.com/106?category=460967">다크프로그래머</a> 님의 블로그를 참고하여 matlab 코드를  python 버전으로 바꿔서 해봤다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## 개선
+
+## https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EC%9D%B8%EA%B5%AC
+## https://darkpgmr.tistory.com/106?category=460967 참고 
+## https://octave-online.net/ 매트랩 하고 싶다면
+
+import numpy as np
+from numpy.linalg import svd
+
+import matplotlib.pyplot as plt 
+
+yr=np.array([1960, 1970, 1980, 1990, 2000, 2010]) ## 년도
+pred_yr=np.array([1960, 1970, 1980, 1990, 2000, 2010,2020]) ## 예측하고자 하는 년도
+pop=np.array([2501, 3224, 3812, 4287, 4700, 4955]) ## 실제 인구수 (만 단위)
+
+A=np.stack((yr**2,yr,[1]*len(yr)),axis=1)
+A_pred=np.stack((pred_yr**2,pred_yr,[1]*len(pred_yr)),axis=1)
+B=np.transpose(pop) ## np.transpose 한것이랑 안한것이랑 차원이 같다. 이건 좀 헷갈린다. 
+
+A_pinv=np.linalg.pinv(A) ## A+
+
+X=A_pinv@B ## 행렬 곱 .dot()은 내적
+
+pop_approx=A@X
+pred_pop=A_pred@X
+
+plt.figure(figsize=(12,12))
+plt.title("Estimation through SVD",fontfamily='Serif',fontsize=30,pad=20)
+plt.suptitle(f"real 2020 pop : 51,82 \n predict 2020 pop : {pred_pop[-1]}")
+plt.scatter(yr,pop,label='True')
+plt.plot(pred_yr,pred_pop,label='pred')
+plt.scatter(2020,pred_pop[-1],label='predict 2020')
+plt.legend(prop={'size': 15})
+plt.show()
+</code></pre></blockquote></details>
+
+<p><img alt="" src="https://ifh.cc/g/yVrQsh.png" /></p>
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; SVD </h3>
+
+<p>특이값 분해는 가장 활용도가 높은 수식이다. <img alt="" src="https://render.githubusercontent.com/render/math?math=A=U%20\Sigma%20V^T" /> 다음 식을 사용하고, python으로 분해 하는 방법으로 구현할 수 있다.  </p>
+<p>특이값 분해로 할 수 있는 것이 많은데 그 중 이미지 축소를 가져왔다. 구현해보니 압축률은 약 84%정도 된다. 환경은 colab에서 했다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+import os
+import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
+
+path = '/content/cat.jpg' 
+## 사진을 새로 해도 되고 path는 https://ifh.cc/g/O908uh.jpg 로 해도 된다.
+img = Image.open(path)
+
+## 회색 스케일
+imggray = img.convert('LA') ## grayscale 변환. 
+imgmat = np.array( list(imggray.getdata(band = 0)), float)
+imgmat.shape = (imggray.size[1], imggray.size[0]) ## height, width 순서로. 대신 image는 width,height
+imgmat = np.matrix(imgmat)
+
+s = float(os.path.getsize(path))/1000 ## size
+print("Size(dimension): ",img.size) ## 차원
+plt.title(f"Original Image {s:0.2f} Kb") ## original file size
+plt.imshow(img)
+plt.show()
+
+# 회색조 패턴으로 변환한 이미지에 대한 압축
+print("이미지 압축 후: ")
+U, S, Vt = np.linalg.svd(imgmat) # SVD(특이값 분해)
+
+cmpimg = np.matrix(U[:, :45]) * np.diag(S[:45]) * np.matrix(Vt[:45,:])
+result = Image.fromarray((cmpimg).astype(np.uint8))
+
+result.save('compressed.jpg')
+
+img=Image.open('compressed.jpg')
+s=float(os.path.getsize('compressed.jpg'))/1000
+print("Size(dimension): ",img.size)
+plt.title(f"compressed Image after={i} {s:0.2f} Kb):")
+plt.imshow(img, cmap='gray')
+</code></pre></blockquote></details>
+
+<p><img alt="" src="https://ifh.cc/g/O908uh.jpg" /></p>
+<p><img alt="" src="https://ifh.cc/g/xKtRVy.jpg" /></p>
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; pywaffle </h3>
+
+<p>github를 둘러보다 보면 흥미로운 라이브러리들이 많다. 본인의 관심분야는 시각화, 머신러닝, 마케팅 등이 있는데 그 중 비율을 표시하는 waffle chart library를 찾았다. 구현방법도 쉽고 matplotlib과 연계하여 사용한다.<br />
+또, font awesome 무료 icon과도 연동이 되니 icon chart도 쉽게 표현 할 수 있다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## https://github.com/gyli/PyWaffle
+!pip install pywaffle
+
+import matplotlib.pyplot as plt
+from pywaffle import Waffle
+
+## 예제 
+data = {'Democratic': 48, 'Republican': 46, 'Libertarian': 3}
+fig = plt.figure(
+    FigureClass=Waffle, 
+    rows=5, 
+    values=data, 
+    colors=["#232066", "#983D3D", "#DCB732"],
+    title={'label': 'Vote Percentage in 2016 US Presidential Election', 'loc': 'left'},
+    labels=[f"{k} ({v}%)" for k, v in data.items()],
+    legend={'loc': 'lower left', 'bbox_to_anchor': (0, -0.4), 'ncol': len(data), 'framealpha': 0},
+    starting_location='NW',
+    block_arranging_style='snake',
+    figsize=(10,6)
+)
+plt.show()
+
+## icon 예제
+fig = plt.figure(
+    FigureClass=Waffle,
+    rows=5,
+    values=[30, 16, 4],
+    colors=["#FFA500", "#4384FF", "#C0C0C0"],
+    icons=['sun', 'cloud-showers-heavy', 'snowflake'],
+    font_size=20,
+    icon_style='solid',
+    icon_legend=True,
+    legend={
+        'labels': ['Sun', 'Rain', 'Snow'], 
+        'loc': 'upper left', 
+        'bbox_to_anchor': (1, 1)
+    },
+    figsize=(10,6)
+)
+plt.show()
+
+</code></pre></blockquote></details>
+
+<p><img alt="" src="https://ifh.cc/g/OON0rH.png" />
+<img alt="" src="https://ifh.cc/g/pBZ1EW.png" /></p>
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; news </h3>
+
+<p>빠르게 뉴스 읽을 때 편할 것 같긴했다. 요약된 건지 짧게 보여줘서 어떻게 세상 돌아가는지 쉽게 알 수 있다.<br />
+나중에 뉴스웹앱 만들면 편할 것 같다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## 설치 - !가 앞에 붙은 이유는 colab에서 진행해서 그렇다. commmand 에서 실행하면 ! 빼고 하면 된다. 
+!pip install canrevan
+
+## 실행 
+## 정치 100 경제 101 사회 102 생활/문화 103 세계 104 IT/과학 105 
+## 정치 경제 2020년 5월 1일부터 5월 31일까지 최대 page 5페이지까지 크롤링
+!canrevan --category 100 101 --start_date 20200501 --end_date 20200531 --max_page 5
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; 욕설필터 </h3>
+
+<p>github에 재밌는게 많다. 이번엔 한국어 욕설을 가려내는 필터를 어떤 분이 개발하셨는데 해보니 아직 미흡하다는 느낌이다. 이번 code에 욕이 있으니 양해를 먼저 구한다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## clone
+!git clone https://github.com/Nam-SW/badword_check.git
+
+## 설치
+%cd badword_check
+!pip install -r requirements.txt
+
+## 실행
+## 예제를 실행하니 0.86확률로 욕설이라고 한다. 
+from badword_check import BadWord
+
+model = BadWord.load_badword_model()
+data = BadWord.preprocessing("그게 뭔데 씹덕아...")
+print(model.predict(data))
+
+.. [[0.8631644]] 
+
+
+## 예제2
+## 신세계 영화 대사 중 황정민이 이정재한테 하는 말이다. 
+## 욕이지만 그 뜻은 그렇지마는 않은 말이다.
+data=BadWord.preprocessing("우리 브라더는 딱 이 ㅈ같은 형님만 믿으면 되야 ㅎ 웃기는 씨벌럼")
+print(model.predict(data))
+
+..[[0.9143331]] 
+
+## 예제3
+## 착한말인데 학습을 잘못 한것 같다.
+data=BadWord.preprocessing("사랑해")
+print(model.predict(data))
+
+..[[0.80871147]]
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; u2net portrait </h3>
+
+<p>학교에서 인공지능. 특히 딥러닝을 공부하는데 대부분 이미지를 가지고 설명을 했다. 코드같은 하드스킬도 대부분 그쪽과 관련이 많은 것 같다. 이번엔 본인 사진을 초상화 느낌이 나는 것을 딥러닝으로 표현하고자 github를 돌아본 결과 찾았다. 라인드로잉을 좋아하는데 결과도 라인드로잉 느낌 났다. 나중에 웹앱으로 표현하면 이것도 재밌을 것 같다. </p>
+<p>코드는 단 7줄이다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## git clone
+!git clone https://github.com/NathanUA/U-2-Net.git
+
+## make folder and model parameter
+## 이 코드 찾는라 정말 오래걸렸다. 모델이 제대로 다운이 안받아지고 따로 다운받으면 upload하는데 시간이 많이 걸려서 꼭 필요한 것이다. 
+!mkdir /content/U-2-Net/saved_models/u2net_portrait/
+%cd /content/U-2-Net/saved_models/u2net_portrait/
+
+!wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1IG3HdpcRiDoWNookbncQjeaPN28t90yW' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1IG3HdpcRiDoWNookbncQjeaPN28t90yW" -O u2net_portrait.pth && rm -rf /tmp/cookies.txt
+
+%cd /content/U-2-Net
+
+## run test
+!python u2net_portrait_test.py
+
+## /content/U-2-Net/test_data/test_portrait_images/your_portrait_im 안에 바꾸고 싶은 이미지 넣기 
+
+## predict
+## check /content/test_data/test_portrait_images/your_portrait_results 
+!python u2net_portrait_demo.py
+
+</code></pre></blockquote></details>
+
+<p><img alt="" src="https://ifh.cc/g/z6T9zm.png" />
+<img alt="" src="https://ifh.cc/g/pdGiJB.png" /></p>
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; upbit 자동매매 </h3>
+
+<p>학교 수업으로 신기한 프로젝트를 했다. 이번 프로젝트의 공유물이고.
+<a href="https://drive.google.com/file/d/10ehI99HWScLnL5E9yoTIb2ksiRCtyPc4/view?usp=sharing">upbit 파일</a></p>
+<p>pyupbit 라이브러리를 통해 변동성 돌파전략으로 <a href="https://github.com/youtube-jocoding/pyupbit-autotrade">조코딩</a>님의 영상을 보고 따라만들어봤다.  </p>
+<p>실제로 아마존 EC2 서비스를 통해 돌렸을 때 하루 $0.01 거의 10원? 그래서 총 일주일정도 돌렸는데 100원 언저리 나온것 같다. 하락장이라 통신이 많이 없었다. 그래서 과금도 많이 없었던 것 같다. </p>
+<p>변동성 돌파 전략은 크게 좋은 전략은 아니었다. 그래서 새로운 방법을 소개하고자 한다. 따로 공부해봤는데 bollinger band 와 골든크로스 전략이 꽤 괜찮은 것 같다. 아직 돌려보진 않았지만 그렇다. </p>
+<p>bollinger band나 골든크로스 전략의 한계점으로는 돈이 많아야 사고 팔고 사고 팔고를 할 수 있다. upbit의 최소매수금액은 5000원으로 수수료도 0.0005%가 붙어서 득실을 정확히 따지는 것 까지는 구현을 못해서 모르겠다. 
+또한, 과거의 데이터를 보고 들어가기 때문에 최소 3분의 딜레이가 생길 수 있다. 그래서 조금 덜 먹을 수도 있다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## 설치
+!pip install pyupbit
+
+## bollinger
+## 단타 매수 전략으로 3분봉 500개의 데이터를 두고 만들었다. 
+import pyupbit
+import numpy as np
+
+def timing():
+    df=pyupbit.get_ohlcv('KRW-BTC',interval='minute3',count=500)
+    df['sma']=df['close'].rolling(window=20).mean()
+    df['sma200']=df['close'].rolling(window=200).mean()
+    df['std']=df['close'].rolling(window=20).std()
+    df['upper']=df['sma']+(df['std']*2)
+    df['lower']=df['sma']-(df['std']*2)
+
+    df=df[19:]
+
+    def get_signals(data):
+        buy_signals=[]
+        sell_signals=[]
+
+        for i in range(len(data['close'])):
+            if data['close'][i]>data['upper'][i]:
+                buy_signals.append(np.nan)
+                sell_signals.append(data['close'][i])
+            elif data['close'][i]<data['lower'][i]:
+                buy_signals.append(data['close'][i])
+                sell_signals.append(np.nan)
+            else:
+                buy_signals.append(np.nan)
+                sell_signals.append(np.nan)
+
+        return buy_signals,sell_signals
+    df['buy']=get_signals(df)[0]
+    df['sell']=get_signals(df)[1]
+
+    return df
+
+import matplotlib.pyplot as plt
+
+df=timing()
+fig=plt.figure(figsize=(20,12))
+ax=fig.add_subplot(1,1,1)
+x_axis=df.index
+ax.fill_between(x_axis,df['upper'],df['lower'],color='grey')
+
+ax.plot(x_axis,df['close'],color='gold',lw=3,label='close')
+ax.plot(x_axis,df['sma'],color='blue',lw=3,label='sma')
+ax.plot(x_axis,df['sma200'],color='cyan',alpha=0.6,label='sma200')
+ax.scatter(x_axis,df['buy'],color='green',lw=3,label='buy')
+ax.scatter(x_axis,df['sell'],color='red',lw=3,label='sell')
+
+ax.set_title('bollinger bands')
+ax.set_xlabel('Date')
+ax.set_ylabel('price')
+ax.legend()
+
+plt.show()
+
+
+
+## 골든크로스 전략
+
+def timing():
+    df=pyupbit.get_ohlcv('KRW-BTC',interval='minute3',count=500)
+    df['ma3']=df['close'].rolling(window=3).mean()
+    df['ma5']=df['close'].rolling(window=5).mean()
+
+    df=df.dropna()
+
+    def get_signals(data):
+        buy_signals=[]
+        sell_signals=[]
+
+        for i in range(len(data['close'])):
+            if data['ma3'][i]<data['ma5'][i]:
+                buy_signals.append(data['close'][i])
+                sell_signals.append(np.nan)
+            elif data['ma3'][i]>data['ma5'][i]:
+                buy_signals.append(np.nan)
+                sell_signals.append(data['close'][i])
+            else:
+                buy_signals.append(np.nan)
+                sell_signals.append(np.nan)
+
+        return buy_signals,sell_signals
+
+    df['buy']=get_signals(df)[0]
+    df['sell']=get_signals(df)[1]
+
+    return df
+
+df=timing()
+
+import matplotlib.pyplot as plt
+
+fig=plt.figure(figsize=(20,12))
+ax=fig.add_subplot(1,1,1)
+x_axis=df.index
+
+ax.plot(x_axis,df['close'],color='gold',lw=3,label='close')
+ax.plot(x_axis,df['ma3'],color='blue',lw=3,label='ma3')
+ax.plot(x_axis,df['ma5'],color='cyan',alpha=0.6,label='ma5')
+ax.scatter(x_axis,df['buy'],color='green',lw=3,label='buy')
+ax.scatter(x_axis,df['sell'],color='red',lw=3,label='sell')
+
+ax.set_title('width')
+ax.set_xlabel('Date')
+ax.set_ylabel('price')
+ax.legend()
+
+plt.show()
+
+</code></pre></blockquote></details>
+<p><img src="https://ifh.cc/g/6lXpax.png" width="100%" height="100%">
+<img src="https://ifh.cc/g/L8dAth.png" width="100%" height="100%"></p>
+<p><br></p>
+
+    <div id="vcomment"></div>
+</div>
+
+<script>
+    new Valine({
+        el: '#vcomment',
+        appId: 'pMCP910pdFNjniAUKmcPWSzx-MdYXbMMI',
+        appKey: 'kywgNcY0JmhAJ5UxQ1yPMl6c',
+        meta: ['nick', 'mail'],
+        lang: 'en',
+        pageSize: 7
+    });
+</script>
+
+        <footer style="padding-top: 100px;">
+    <div style="margin:0px 400px">
+        <h6>98hyun © 2021 Powered by Flask</h6>
+    </div>
+</footer>
+    </div>
+</body>
+
+</html>

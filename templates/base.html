@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- meta & google -->
+    <!-- meta -->
     {% include "google.html" %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <meta property="og:title" content="Data Traveler - Data Tech Blog" />
     <meta property="og:image" content="https://ifh.cc/g/wRy7wk.png" />
     <meta property="og:description" content="데이터분석 및 시각화 기술을 다루고 다른 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <meta name="naver-site-verification" content="9587fb2e71e511ea1c87a0881159739147ed08cc" />
     <!-- css -->
     <link rel="shortcut icon" href="{{url_for('static',filename='img/favicon.ico')}}">
     <link rel="stylesheet" href="{{ url_for('pygments') }}">
@@ -24,6 +25,7 @@
     <!-- js -->
     {% block head %}{% endblock %}
     <title>Anywhere</title>
+    {% include "facebook.html" %}
 </head>
 
 <body>

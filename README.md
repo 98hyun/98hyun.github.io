@@ -27,6 +27,8 @@
 <li>20210519 : resume embed in web</li>
 <li>20210520 : 공유하기 기능 (kakao,naver)</li>
 <li>20210523 : google tag manager, google analytics</li>
+<li>20210602 : google tag manager, google analytics 재설정. (+6월3일)</li>
+<li>20210630 : blog 글 정리. google analytics 다시 공부.
 </blockquote>
 </details></h3>
 
