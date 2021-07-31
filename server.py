@@ -57,14 +57,18 @@ def pygments():
     return pygments_style_defs(style='algol_nu'), 200, {'Content-Type':'text/css'}
 
 # resume
-@app.route('/resume.html')
-def resume():
+@app.route('/resume')
+def get_resume():
     with open('./templates/resume.pdf','rb') as f:
         res=f.read()
     response=make_response(res)
     response.headers['Content-Type']='application/pdf'
     response.headers['Content-Disposition']="inline; filename=resume.pdf"
     return response
+
+@app.route('/resume.html')
+def show_resume():
+    return render_template('resume.html')
 
 # sitemap
 @app.route('/sitemap.xml')
