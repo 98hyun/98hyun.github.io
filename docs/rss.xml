@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2021-07-31 09:05:44 KST+0900</lastBuildDate>
+  <lastBuildDate>2021-08-28 13:43:35 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2021-08-31</title>
+    <link>https://98hyun.github.io/posts/20210831.html</link>
+    <description>huggingface에서 배포한 transformers 라이브러리의 koelectra모델을 사용하여 전이학습을 통해 데이콘의 뉴스 토픽 분류 문제를 풀어봤다. python을 통해 pdf 파일의 table을 읽어오는 라이브러리(camelot)를 통해 데이터를 수집하고 tableau로 parliment chart를 통해 2021 국회의원 출석부를 시각화 했다. 그 과정에서 figma를 사용하여 디자인 요소를 더했다. 딥페이크를 사용하여 본인 사진과 마이야히 영상을 합성한 밈을 만들어봤다. youtube api를 통해 youtube 재생목록의 비디오 정보들을 수집했고, 이를 tableau로 표현했다. 또한, python script를 통해 mysql에 자동적으로 크롤링한 값들을 담을 수 있도록 window task scheduler를 통해 매일 오후 12시에 진행하도록 했다. 통계분석을 간단하게 정리했다. 독일 아마존 사이트의 FFP2 마스크 긍정 리뷰와 부정리뷰를 크롤링했고, spacy를 통해서 독일어 문법을 분리하고 빈도를 워드클라우드로 정리했다. LDA 토픽 모델링을 통해 어떤 표제어가 다른 표제어들과 관련이 있는지 분석했다. 마지막으로 구글 정책으로 인해 google analytics가 홈페이지에서 읽어오지못하는 현상(samesite) 문제를 해결한 방법을 썼다.</description>
+    <pubDate>2021-08-28</pubDate>
+    </item>
     
     <item>
     <title>2021-07-31</title>

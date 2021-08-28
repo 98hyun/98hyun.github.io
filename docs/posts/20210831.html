@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164778559-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164778559-1', { cookie_flags: 'max-age=7200;secure;samesite=none' });
+</script>
+<!-- end google analytics -->
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MX6VS7T');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="데이터분석 및 시각화 기술을 다루고 다른 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <meta property="og:title" content="Data Traveler - Data Tech Blog" />
+    <meta property="og:image" content="https://ifh.cc/g/wRy7wk.png" />
+    <meta property="og:description" content="데이터분석 및 시각화 기술을 다루고 다른 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <meta name="naver-site-verification" content="9587fb2e71e511ea1c87a0881159739147ed08cc" />
+    <!-- css -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="/pygments.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <!-- js -->
+    
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script type="text/javascript" src="/static/js/share.js"></script>
+
+    <title>Anywhere</title>
+    <!-- Facebook Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '382468040108911');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=382468040108911&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX6VS7T" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div>
+        <header style="background-color: #2e3f59;height:240px;">
+    <div class="inner-header" style="margin:0px 400px">
+        <a href="/"><h1 style="margin-top: 40px;display:inline-block;color:azure;">Data Traveler</h1></a>
+        <h6 style="font-family: Arial;color:azure;">Tantum videmus quantum scimus</h6>
+        <a href="/resume.html" target="_blank"><i class="fas fa-id-card" style="font-size: 2rem;color:azure;padding:50px 3px 0px 0px;"></i></a>
+        <a href="https://github.com/98hyun" target="_blank"><i class="fab fa-github" style="font-size: 2rem;padding:50px 4px 0px 0px;color:azure;"></i></a>
+        <a href="mailto:ckdckd01@gmail.com" target="_blank"><i class="fas fa-envelope" style="font-size: 2rem;color:azure;padding:50px 5px 0px 0px;"></i></a>
+        <a href="https://98hyun.github.io/rss.xml" target="_blank"><i class="fas fa-rss" style="font-size: 2rem;color:azure;padding:50px 5px 0px 0px;"></i></a>
+    </div>
+</header>
+        
+<div style="margin:0px 400px">
+    <hr>
+    <h3>2021-08-31</h3>
+    <p class="tag"><strong>Author:</strong> 98hyun</p>
+    <p class="tag"><strong>Published:</strong> 2021-08-28</p>
+    <p class="tag">
+	
+	    <strong>Tags:</strong> 
+	    
+	        <a href="/tag/%EB%94%A5%EB%9F%AC%EB%8B%9D.html">딥러닝</a>    
+	    
+	        <a href="/tag/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D.html">데이터분석</a>    
+	    
+	        <a href="/tag/%EC%8B%9C%EA%B0%81%ED%99%94.html">시각화</a>    
+	    
+	        <a href="/tag/%EB%94%94%EC%9E%90%EC%9D%B8.html">디자인</a>    
+	    
+	        <a href="/tag/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.html">데이터베이스</a>    
+	    
+	        <a href="/tag/%ED%86%B5%EA%B3%84.html">통계</a>    
+	    
+	
+</p>
+    
+<p><strong>Share : 
+    <span>
+        <a id="kakao-link-btn" href="javascript:kakao()">
+            <img width="40" height="40" 
+                src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+        </a>
+    </span>
+    <span>
+        <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+        <script type="text/javascript">
+            new ShareNaver.makeButton({
+                "type": "f", "title": document.querySelector('meta[property="og:title"]')["content"],
+                "url": window.location.href });
+        </script>
+    </span>
+</strong></p>
+
+    <hr>
+    <p>조금 이르게 8월 블로그를 냈다. 블로그 마케팅 공부를 하고 있어서 실험해볼것도 있고 해서 그렇다. </p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; 뉴스 토픽 분류 with Koelectra </h3>
+
+<p>다중분류라고도 하는 위 문제는 한글 nlp 문제로, 저번에 삼성카드 공모전에서 했던 문제와 푸는방법은 같다. 다만, 이번엔 어떤 종류인지를 나누는 문제이다. 이번엔 koelectra모델을 사용하여 전이학습을 통해 진행했다. </p>
+<p>모델은 epoch 3번만 돌렸으며, 뛰어난 성적을 보여줬다. </p>
+<p>그 중 일부만 가져왔다. 공유를 해놨으니 <a href="https://colab.research.google.com/drive/1Zv2VGzemYI3J2pjD9uFsyL6d_d2iuDiu?usp=sharing">이 링크</a>로 들어가면 된다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## max_length
+
+# 한글은 토큰화되는 방법이 다르기 때문에 항상 확인해주고 있다. 
+
+.. snip 
+
+tr['length']=tr['title'].apply(lambda line:len(tokenizer.encode(line)))
+
+import seaborn as sns
+
+sns.histplot(data=tr, x="length", binwidth=3)
+
+## 학습 과정
+
+# koelectra모델은 토큰화되어 임베딩까지 된 ids들을 받아서 attention_mask와 함께 입력된다. 
+# kobert로도 해봤는데 kobert는 안됐다. 모델마다 다른가보다.
+
+losses = []
+accuracies = []
+
+for i in range(epochs):
+  total_loss = 0.0
+  correct = 0
+  total = 0
+  batches = 0
+
+  model.train()
+
+  for input_ids_batch, attention_masks_batch, y_batch in tqdm(train_loader):
+    optimizer.zero_grad()
+    y_batch = y_batch.to(device)
+    y_pred = model(input_ids_batch.to(device), attention_mask=attention_masks_batch.to(device))[0]
+    loss = F.cross_entropy(y_pred, y_batch)
+    loss.backward()
+    optimizer.step()
+
+    total_loss += loss.item()
+
+    _, predicted = torch.max(y_pred, 1)
+    correct += (predicted == y_batch).sum()
+    total += len(y_batch)
+
+    batches += 1
+    if batches % 100 == 0:
+      print("Batch Loss:", total_loss, "Accuracy:", correct.float() / total)
+
+  losses.append(total_loss)
+  accuracies.append(correct.float() / total)
+  print("Train Loss:", total_loss, "Accuracy:", correct.float() / total)
+
+.. endsnip
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; python으로 pdf table 읽기 </h3>
+
+<p><a href="https://public.tableau.com/app/profile/98hyun/viz/parliament_16282407133480/dashboard">2021년 국회의원 출석 현황 대쉬보드</a>를 만들기 위해서 데이터 수집을 위해 pdf파일을 얻었다. 그 안에 table에 데이터가 있다. 그래서 pdf에 있는 table 읽는 유용한 라이브러리를 소개하고자 한다. </p>
+<p>자세한 코드는 <a href="https://colab.research.google.com/drive/16z-khVjMLAIlYqcfPryD5Ynps8HWiyXp?usp=sharing">이 링크</a>에 있다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## 참고
+# https://camelot-py.readthedocs.io/en/master/
+
+.. snip 
+
+import camelot
+tables=camelot.read_pdf('your.pdf',pages='0,1,2') 
+
+# 실행
+tables[0].df
+
+..endsnip
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; figma </h3>
+
+<p>figma로 위에서 진행한 <a href="https://public.tableau.com/app/profile/98hyun/viz/parliament_16282407133480/dashboard">2021년 국회의원 출석 현황 대쉬보드</a>의 background image를 여기서 만들었다. </p>
+<p>관련 디자인 자료는 <a href="https://www.figma.com/file/Kj7rk9rDzpzxLOmqh9HXnr/tableau?node-id=0%3A1">이 링크</a>를 타고 볼 수 있다.</p>
+<p>figma는 sketch나 adobe XD 같은 역할을 하는 디자인 프로그램이다. UI가 깔끔하고 무료인데다 plugin 기능까지 사용할 수 있다. 구글아이디만 있으면 누구나 사용할 수 있다. </p>
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; deep fake </h3>
+
+<p>유튜브에서 여러 사람 얼굴에 누나의 꿈 노래가 나오는데 재밌어서 한번 해보고 싶어졌다.  </p>
+<p>딥페이크란 인공지능을 기반으로 활용한 인간 이미지 합성 기술이다. 안면 윤관 안쪽만 피부톤 맞춰서 합성하는 것이다. </p>
+<p>검색을 할 때 '마이야히 model github'라고 쳤다. 참고한 사이트는 https://tler.tistory.com/41 여기다.</p>
+<p>본인이 썼던 파일은 <a href="https://colab.research.google.com/drive/1JeGs6XH09-UFNN3_MD0y9PZodIJ_lKvh?usp=sharing">이 링크</a>를 통해 들어가면 된다. </p>
+<details><summary>참고</summalry><bockquote><pre><code>
+
+## 무료 음원 추출 사이트 : https://mp3skull.org/
+## 원본 영상 : https://www.youtube.com/watch?v=4tDdr3kiSEg - 편의를 위해 04.mp3로 할것.
+## 영상 다운 사이트 : https://ko.savefrom.net/7/#url=http://youtube.com/watch?v=4tDdr3kiSEg&utm_source=youtube.com&utm_medium=short_domains&utm_campaign=ssyoutube.com&a_ts=1628668035.301 - 원래 영상 앞에 ss만 붙이면 다운로드 가능. https://www.ssyoutube.com/watch?v=4tDdr3kiSEg 
+## 무료 영상 편집 온라인 사이트 : https://www.fastreel.com/kr/video-maker.html
+
+## 주의 : 공유한 colab 파일에도 써있지만 뒤 까지 실행하면 colab ram이 버티질 못해서 세션이 나간다. 
+## 주의 : pre-trained 모델로 하기 때문에 순서나 경로가 지켜지면 편하다. 그 외에는 직접 경로 수정같은걸 해줘야한다. 
+
+</code></pre></blockquote></details>
+
+<p><a href="https://photos.app.goo.gl/FyVRwnjTg4JdCUUw7">이 링크</a>로 가면 결과물을 볼 수 있다. </p>
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; youtube api </h3>
+
+<p>youtube 크롤링을 통해 본인이 즐겨듣는 노래를 구별하여 시각화했다. youtube를 직접 selenium이나 beautifulsoup를 통해 할 수도 있지만, 구글에서 제공하는 api가 있기 때문에 '이렇게만 해라'하는 규칙만 지키면 훨씬 편하게 크롤링 할 수 있다. youtube 크롤링 코드는 <a href="https://colab.research.google.com/drive/14gBNmpR4XQ2A1ZA7Jk9JG43ExHSHH4Gt?usp=sharing">이 링크</a>에서 볼 수 있다.</p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## 참고 
+## https://luminitworld.tistory.com/92 - 예제
+## https://developers.google.com/youtube/v3/code_samples/python - sample
+
+## 특정 동영상의 없는 지표를 가져오기 위해 0으로 대체하는 코드다. 
+.. snip
+
+def get_stat(response):
+    try:
+        view=int(response['items'][0]['statistics']['viewCount'])
+    except:
+        view=0
+    try:
+        like=int(response['items'][0]['statistics']['likeCount'])
+    except:
+        like=0
+    try:
+        dislike=int(response['items'][0]['statistics']['dislikeCount'])
+    except:
+        dislike=0
+    try:
+        comment=int(response['items'][0]['statistics']['commentCount'])
+    except:
+        comment=0
+    return view,like,dislike,comment
+
+.. endsnip
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; window task scheduler - crawling </h3>
+
+<p>mysql과 더불어 정해진 시간이 되면 특정 task를 진행하도록 window에 설정했다. python script에는 코로나 api를 통해서 일일 확진자 데이터를 불러와서 localhost mysql에 데이터를 매일 저장하는 script를 코드를 만들었다. 그 후 메모장으로 conda 명령어를 쓴 후 .bat파일로 만들었다. code는 python mysql 연결 코드를 가져왔다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+.. snip
+
+
+
+.. endsnip
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; 통계분석 </h3>
+
+<p>사회조사분석사2급을 준비하고 있다. 사회현상을 잘 이해하기 위해서. 그리고 찾아본 데이터 관련 자격증 중 꽤 맘에 들었다. SPSS를 공부하면서 다시금 잊지말자는 의미로 통계 검정방법들을 적는다. </p>
+<details><summary>통계분석</summary><blockquote><pre><code>
+
+## 카이제곱 동일성 검정 vs 독립성 검정 
+## 엄밀히 차이 없다. 
+## 가중치를 할당해주면 바로 넘어가고 안하면 셀에 대해서 빈도를 정해준다. - SPSS
+## 교차표에서 행은 독립변수. 열에 종속변수로 작성. - 다시보니 문제에 맞게만 하면 되는 것 같다.
+## 기대도수가 0을 포함하거나 5보다 작은 셀이 전체의 20%를 초과하면 못한다. - 카이제곱 검정 가정이다.
+
+## 독립표본 T 검정
+## 두 집단 간의 평균분석
+## 두 집단이 독립이라는 가정이 있다.
+
+## 대응표본 T 검정
+## 독립이라는 가정이 필요 없고, 짝만 맞으면 된다. 
+## 보통 전후 개념이 있다.
+
+## 일원배치분산분석
+## 요인의 수에 따라 다원배치분산분석이 될 수 있고, 결국은 집단의 수가 3개의 이상의 경우 모평균을 비교할 때 사용.
+## levene 등분산검정이 필요하다. levene 검정의 귀무가설은 모분산이 같다. 이다. 
+## 요인에 따라 평균의 차이가 없다.면 굳이 다음에 사후검증을 할 필요가 없다.
+
+## 상관계수
+## pearson 연속형 이변량 연관성
+## kendall의 타우는 순위척도에 연관성
+## spearman kendall과 비슷함.
+
+## 회귀
+## 단계선택법 : 일바적으로 유의확률 p값을 이용하는 경우 진입은 0.05,제거는 0.1.
+## 검정통계량 F값을 이용하는 경우 지입은 2 제거는 1.99
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; spacy & wordcloud </h3>
+
+<p>파이썬 selenium을 통해 독일 아마존 사이트의 ffp2 마스크 긍정리뷰와 부정리뷰를 크롤링 했고, 부정리뷰 중 어떤 단어가 많이 나왔고, 표제어(lemmma)를 찾아 빈도를 통해 wordcloud를 그려서 마지막으로 LDA 토픽 모델링을 해봤다. 표제어를 찾는 방법은 spacy라이브러리를 통해 분석했다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+## 독일어는 umlaut이 있기 때문에 일반 text로 저장을 못한다. 즉, utf-8 형태로 encoding을 하고
+## 그 후에 decode를 해야한다. 
+
+.. snip
+## 쓰기
+if idx==0:
+    f=open('neg_review.txt','wb')
+    f.write(text)
+else:
+    f=open('neg_review.txt','ab')
+    f.write('\n')
+    f.write(text)
+
+## 읽기
+text_list=[]
+
+with open('neg_review.txt','rb') as f:
+    lines = f.readlines()
+    for line in lines:
+        line=line.decode('utf-8')
+        line=line.strip('\n')
+        text_list.append(line)
+
+.. endsnip
+
+.. snip
+## spacy와 Counter - 빈도 계산 
+noun_list=[]
+
+for text in text_list:
+    doc=nlp(text)
+    for token in doc:
+        if token.pos_=='PROPN' or token.pos_=='NOUN':
+            noun_list.append(token.lemma_)
+
+from collections import Counter
+
+noun_freq=Counter(noun_list)
+
+from wordcloud import WordCloud
+
+import matplotlib.pyplot as plt
+
+# Create and generate a word cloud image:
+wordcloud = WordCloud(font_path='Berolina.ttf',stopwords=stop_words.STOP_WORDS,
+                      max_font_size=30,max_words=30,background_color="white").generate_from_frequencies(noun_freq)
+
+# Display the generated image:
+plt.figure()
+plt.imshow(wordcloud)
+plt.axis("off")
+plt.show()
+
+# wordcloud.to_file("img/first_review.png")
+
+.. endsnip
+
+.. snip
+## spacy 나오는 언어 모를 때
+print(spacy.explain('pd'))
+
+## jupyter에서 사용 가능하고, 그림으로 문법을 이해하고 싶을 때 
+displacy.render(doc, style="dep")
+
+.. endsnip
+
+.. snip
+## spacy 공부&설치
+
+## 독일어 공부 spacy
+https://course.spacy.io/de
+
+# 독일어 알파벳
+https://ko.wiktionary.org/wiki/%EB%B6%80%EB%A1%9D:%EB%8F%85%EC%9D%BC%EC%96%B4_%EC%95%8C%ED%8C%8C%EB%B2%B3
+
+# pos 태깅
+https://universaldependencies.org/docs/u/pos/
+
+
+## 설치 
+conda install -c conda-forge spacy
+python -m spacy download de_dep_news_trf # 독어 : spacy install 페이지에서 선택하여 다른 언어 가능.
+
+spacy.load('de_dep_news_trf')
+
+
+.. endsnip
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; LDA 토픽 모델링 </h3>
+
+<p>LDA Topic Modeling은 대량의 문서군으로 부터 주제(토픽)을 자동으로 찾아내기 위한 알고리즘으로, 유사한 의미를 가진 단어들을 집단화하는 방법이다. 토픽수를 입력 받으면 전체 문서에 토픽을 랜덤으로 할당한 후, 토픽의 재할당을 반복 수행하여 문서와 단어의 토픽을 찾은 알고리즘이기 때문에 재현률이 떨어진다. </p>
+<p>위의 spacy &amp; wordcloud와 함께 토픽간의 관계를 보기 위한 연장 프로젝트였다. </p>
+<p><a href="https://colab.research.google.com/drive/1H5XML0taJZG9iWXB0xy7LqTYmazmyrxC?usp=sharing">이 링크</a>로 들어가면 LDA 결과를 볼 수 있다. </p>
+<details><summary>해석방법</summary><blockquote><pre><code>
+
+## 참고
+## https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=textom&logNo=221911359583
+
+## 1. 토픽선택
+단어 어떤 단어인지 안나온다. 그래서 코드로 밑에 확인할 수 있는 방법을 썼다.
+
+## 2. 토픽간의 거리 
+토픽 간의 거리가 멀 수록 판별 타당도가 높고 주제가 뚜렷하게 구분된다. 토픽 간의 거리가 가깝거나 겹쳐져 있다면 판별 타당도가 낮음으로 비슷한 주제를 나타낸다. 
+
+## 3. 토픽의 크기 
+토픽 원의 크기가 클 수록 높은 빈도수의 단어들로 구성되어 있다. 가장 큰 원이 메인 토픽이라고 해석할 수 있다. 
+인덱스가 크기랑 관련있는 것처럼 직관적이니 한눈에 알 수 있다.
+
+## 4. λ(람다) 값 설정  
+λ(람다) 값을 조절하여 토픽을 구성하는 단어의 출현 조건을 설정할 수 있다.
+λ값이 낮을수록 각 토픽을 구성하는 단어가 뚜렷해지지만 비교적 빈도가 낮은 단어들로 구성된다. 
+따라서, 토픽 분별력을 높이기 위해서는 낮은 빈도로 출현하는 단어들에 대해서도 정확한 정제가 필요하다.
+
+## 5. 토픽 구성 단어 
+토픽을 구성하는 단어들을 확인할 수 있으며, 파란막대그래프는 전체 단어의 빈도를, 빨간막대그래프는 해당 토픽에서의 빈도를 보여준다.
+
+</code></pre></blockquote></details>
+
+<p><img src="https://ifh.cc/g/nDWMp2.jpg" width=100% height="100%"></p>
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; samesite - google analytics </h3>
+
+<p>2020년 6월부터 크롬 80버전 이상부터 <code>samesite</code> 문제가 생겼다. samesite의 default 값이 none에서 lax로 바뀐것이다. 무엇이 문제냐면 본인 사이트에서 다른 사이트로 통신을 할 때 cookie를 못가져오는 문제가 생긴다. 구글 애널리틱스는 _ga cookie를 홈페이지 유입자한테 주고, 이걸 가져와서 분석을 하는데 이게 안되는 것이다. </p>
+<p><img src="https://ifh.cc/g/7Os2zx.png" width=100% height=100%></p>
+<p>ga4는 문제가 없는지 잘 구동 됐는데 universal이 문제였던 것이다. 그래서 config를 바꿔줄 필요가 있었다. 
+gtag가 아래 처럼 cookie_flags고, ga는 cookieFlags다.</p>
+<p><img src="https://ifh.cc/g/cASe6c.png" width=100% height=100%></p>
+<p>만약 gtm(google tag manager)에도 적용하고 싶다면 변수에서 <code>cookieFlags : max-age=7200;samesite=none;secure</code>을 넣어주면 된다.</p>
+<p><img src="https://ifh.cc/g/xqcs1o.png" width=100% height=100%></p>
+<p><br></p>
+
+    <div id="vcomment"></div>
+</div>
+
+<script>
+    new Valine({
+        el: '#vcomment',
+        appId: 'pMCP910pdFNjniAUKmcPWSzx-MdYXbMMI',
+        appKey: 'kywgNcY0JmhAJ5UxQ1yPMl6c',
+        meta: ['nick', 'mail'],
+        lang: 'en',
+        pageSize: 7
+    });
+</script>
+
+        <footer style="padding-top: 100px;">
+    <div style="margin:0px 400px">
+        <h6>98hyun © 2021 Powered by Flask</h6>
+    </div>
+</footer>
+    </div>
+</body>
+
+</html>

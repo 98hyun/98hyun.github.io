@@ -1,5 +1,5 @@
 # library
-from flask import Flask, render_template, make_response
+from flask import Flask, render_template,make_response
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask_frozen import Freezer
 import sys
@@ -21,6 +21,11 @@ FREEZER_DESTINATION='docs'
 
 app=Flask(__name__)
 app.config['FREEZER_IGNORE_MIMETYPE_WARNINGS'] = True
+app.config.update(
+    SESSION_COOKIE_SECURE=True,
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE='Strict',
+)
 app.config.from_object(__name__) # 무슨뜻인지 모르겠다.
 pages=FlatPages(app)
 freezer=Freezer(app)
@@ -57,17 +62,8 @@ def pygments():
     return pygments_style_defs(style='algol_nu'), 200, {'Content-Type':'text/css'}
 
 # resume
-@app.route('/resume')
-def get_resume():
-    with open('./templates/resume.pdf','rb') as f:
-        res=f.read()
-    response=make_response(res)
-    response.headers['Content-Type']='application/pdf'
-    response.headers['Content-Disposition']="inline; filename=resume.pdf"
-    return response
-
 @app.route('/resume.html')
-def show_resume():
+def resume():
     return render_template('resume.html')
 
 # sitemap
