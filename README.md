@@ -29,6 +29,9 @@
 <li>20210523 : google tag manager, google analytics</li>
 <li>20210602 : google tag manager, google analytics 재설정. (+6월3일)</li>
 <li>20210630 : blog 글 정리. google analytics 다시 공부.
+<li>20210731 : blog 글 정리. resume 해결x. 페이스북 픽셀. google analytics  해결x.</li>
+<li>20210829 : blog 글 정리. resume 해결. 페이스북 픽셀, google analytics 해결.</li>
+<li>20210901 : 페이스북 픽셀 중복제거, 폰트 교체.</li>
 </blockquote>
 </details></h3>
 
