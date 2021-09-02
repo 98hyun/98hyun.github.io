@@ -1,15 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div style="margin:0px 400px">
-<div style="padding-top: 50px;">
-    <h3 class="text-center" style="color:#2e3f59;">Tag: <em>{{ tag }}</em></h3>
-    <br>
-	<div class="list-group post">
+<h3>Tag: {{ tag }}</h3>
+<div class="postlist">
 	{% for page in pages %}
-		<a style="color:#2e3f59;" class="text-center list-group-item" href="{{ url_for('page', path=page.path) }}">{{ page.title }}</a>
+	<a href="{{ url_for('page', path=page.path) }}">{{ page.title }}</a>
 	{% endfor %}
-	</div>
-</div>
 </div>
 {% endblock content %}

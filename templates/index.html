@@ -1,19 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div style="margin:0px 400px">
-    <div style="padding-top: 50px;">
-        <h2>Recent Journey</h2>
-        <br>
-        <div class="list-group">
-            {% for post in posts %}
-            <a style="padding: 10px 0px;color:#2e3f59" class="text-center list-group-item"
-                href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a>
-            {% else %}
-            <li>None</li>
-            {% endfor %}
-            <a style="padding: 10px 0px;color:#2e3f59" class="text-center list-group-item" href="{{url_for('posts')}}">More</a>
-        </div>
-    </div>
+<h2>Recent Journey</h2>
+<div class="postlist">
+    {% for post in posts %}
+    <a href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a>
+    {% else %}
+    <li>None</li>
+    {% endfor %}
+    <a href="{{url_for('posts')}}">More</a>
 </div>
 {% endblock %}

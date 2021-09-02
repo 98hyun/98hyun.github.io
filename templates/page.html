@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block content %}
-<div style="margin:0px 400px">
+<div id="post">
     <hr>
     <h3>{{ page.title }}</h3>
     <p class="tag"><strong>Author:</strong> {{ page.author }}</p>
@@ -17,10 +17,8 @@
     {% include "share.html" %}
     <hr>
     {{page.html|safe}}
-
     <div id="vcomment"></div>
 </div>
-
 <script>
     new Valine({
         el: '#vcomment',
