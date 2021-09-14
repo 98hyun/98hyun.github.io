@@ -1,5 +1,5 @@
-flask==1.1.2
-flask-flatpages==0.7.2
-frozen-flask==0.15
+flask==1.1.4
+flask-flatpages==0.7.3
+frozen-flask==0.18
 pytz
-pygments==2.8.0
+pygments
