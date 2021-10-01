@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2021-09-01 14:23:37 KST+0900</lastBuildDate>
+  <lastBuildDate>2021-10-01 15:06:12 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2021-09-30</title>
+    <link>https://98hyun.github.io/posts/20210930.html</link>
+    <description>pixlr를 통해 작업한 결과물을 가져왔다. 포토샵의 대부분 기능을 구현가능하며, 누끼따기부터 효과까지 구현한 영상을 가져왔다. tableau로 구현한 radar chart와 network chart를 보여준다. 모두 tableau만의 스킬들로 구현했기 때문에 다운로드하여 역으로 공부하는것을 추천한다. 그 외에 chart를 위해 필요한 데이터 구성을 python에서 stack과 pivot을 이용하여 어떻게 하는지 알려준다. 또한, json에 대해서 간략하게 설명한다.  css flexbox에 대해서 공부했다. 반응형으로 제작하려면 꼭 이해해야하므로 중요한 내용만 골라서 적어놨다.  마지막으로 google analytics(ga)와 google tag manager(gtm)의 팁을 적어놨고, 최근에 마무리한 제로베이스에서 최종평가로 한 blog 마케팅을 facebook 과 google ads을 통해 집행한 과정과 그 결과를 보여준다.</description>
+    <pubDate>2021-09-30</pubDate>
+    </item>
     
     <item>
     <title>2021-08-31</title>
