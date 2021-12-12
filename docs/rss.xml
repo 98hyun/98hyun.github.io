@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2021-11-07 10:22:42 KST+0900</lastBuildDate>
+  <lastBuildDate>2021-12-12 20:21:26 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2021-11-30</title>
+    <link>https://98hyun.github.io/posts/20211130.html</link>
+    <description>광진구 교통사고 주의 및 예측 서비스를 이번 2021년 2학기 학교 프로젝트로 진행했다. 구현하던 중 데이터 부족 이슈를 해결하기 위해서 데이터 오버 샘플링 기법을 사용했고, 이를 소개한다. 라즈베리파이를 윈도우에서 다룰 수 있는 방법을 소개한다.</description>
+    <pubDate>2021-12-12</pubDate>
+    </item>
     
     <item>
     <title>2021-10-31</title>

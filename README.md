@@ -32,6 +32,7 @@
 <li>20210731 : blog 글 정리. resume 해결x. 페이스북 픽셀. google analytics  해결x.</li>
 <li>20210829 : blog 글 정리. resume 해결. 페이스북 픽셀, google analytics 해결.</li>
 <li>20210901 : 페이스북 픽셀 중복제거, 폰트 교체.</li>
+<li>20211212 : 11월 blog 정리.</li>
 </blockquote>
 </details></h3>
 
