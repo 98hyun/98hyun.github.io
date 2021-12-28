@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2021-12-12 20:21:26 KST+0900</lastBuildDate>
+  <lastBuildDate>2021-12-28 18:29:22 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2021-12-31</title>
+    <link>https://98hyun.github.io/posts/20211231.html</link>
+    <description>블록체인 did를 활용한 지문연계 신원인증서비스는 라즈베리파이에서 python과 지문인식기를 활용하여 진행했다. ppt와 word를 팁들을 적어놨다. ppt는 템플릿과 간단하면서 효과적으로 시각효과를 낼 수 있는 방법들을 적어놨다. 또한, word는 태블로 대쉬보드를 기획서 만드는데 사용했고, 레이아웃 팁들을 적어놨다. plotly 기본 틀과 특성 공학 방법들을 나열하고 소개한다. 마지막으로 광진구교통사고예측및주의 서비스를 개발하여 어떻게 구성했는지 소개한다.</description>
+    <pubDate>2021-12-28</pubDate>
+    </item>
     
     <item>
     <title>2021-11-30</title>
