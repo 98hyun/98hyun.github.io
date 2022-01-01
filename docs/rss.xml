@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2021-12-28 18:29:22 KST+0900</lastBuildDate>
+  <lastBuildDate>2022-01-01 12:01:01 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2021을 보내며.</title>
+    <link>https://98hyun.github.io/posts/20220101.html</link>
+    <description>2021년을 보내는 회고를 썼다.</description>
+    <pubDate>2022-01-01</pubDate>
+    </item>
     
     <item>
     <title>2021-12-31</title>
