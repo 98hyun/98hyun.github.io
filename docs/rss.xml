@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2022-01-01 12:01:01 KST+0900</lastBuildDate>
+  <lastBuildDate>2022-02-01 12:15:21 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2022-01-31</title>
+    <link>https://98hyun.github.io/posts/20220131.html</link>
+    <description>검색광고마케터 2급을 공부하며 배웠던 마케팅 KPI들을 다룬다. django를 python virtualenv를 통한 개발환경 세팅 방법을 소개한다. google analytics 자격증을 위해 공부할 수 있는 사이트를 소개한다. categorical embedding 방법을 통해 데이콘 데이터 경진대회에서 상위 17% 성적을 얻는 경험을 소개한다. fastai를 통해 swin transformer라는 최근 이미지 신 기술을 소개한다. 구글 코랩에서 이미지같은 드라이브링크를 코랩환경에서 바로 엑세스 할 수 있는 api코드를 소개한다. flutter를 이용하여 led 어플리케이션을 만든 경험을 소개한다.</description>
+    <pubDate>2022-02-01</pubDate>
+    </item>
     
     <item>
     <title>2021을 보내며.</title>
