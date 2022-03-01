@@ -3,3 +3,4 @@ flask-flatpages==0.7.2
 frozen-flask==0.15
 pytz
 pygments==2.8.0
+itsdangerous==2.0.1

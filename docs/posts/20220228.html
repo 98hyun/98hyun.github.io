@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164778559-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164778559-1', { cookie_flags: 'max-age=7200;secure;samesite=none' });
+</script>
+<!-- end google analytics -->
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MX6VS7T');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="데이터분석 및 시각화 기술을 다루고 다른 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <meta property="og:title" content="Data Traveler - Data Tech Blog" />
+    <meta property="og:image" content="https://ifh.cc/g/wRy7wk.png" />
+    <meta property="og:description" content="데이터분석 및 시각화 기술을 다루고 다른 tech 개념과 기술을 설명하는 블로그입니다."/>
+    <meta name="naver-site-verification" content="9587fb2e71e511ea1c87a0881159739147ed08cc" />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/pygments.css">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <!-- font -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <!-- js -->
+    
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script type="text/javascript" src="/static/js/share.js"></script>
+
+    <title>Anywhere</title>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX6VS7T" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <header>
+    <div class="title">
+        <a href="/"><h1>Data Traveler</h1></a>
+        <h6>Tantum videmus quantum scimus</h6>
+    </div>
+    <div class="icons">
+        <a href="/resume.html" target="_blank"><i class="fas fa-id-card"></i></a>
+        <a href="https://github.com/98hyun" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/98hyun" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:ckdckd01@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://98hyun.github.io/rss.xml" target="_blank"><i class="fas fa-rss"></i></a>
+    </div>
+</header>
+    <div id="content">
+    
+<div id="post">
+    <hr>
+    <h3>2022-02-28</h3>
+    <p class="tag"><strong>Author:</strong> 98hyun</p>
+    <p class="tag"><strong>Published:</strong> 2022-03-01</p>
+    <p class="tag">
+	
+	    <strong>Tags:</strong> 
+	    
+	        <a href="/tag/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD.html">개발환경</a>    
+	    
+	        <a href="/tag/%EB%A7%88%EC%BC%80%ED%8C%85.html">마케팅</a>    
+	    
+	
+</p>
+    
+<p><strong>Share : 
+    <span>
+        <a id="kakao-link-btn" href="javascript:kakao()">
+            <img width="40" height="40" 
+                src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+        </a>
+    </span>
+    <span>
+        <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+        <script type="text/javascript">
+            new ShareNaver.makeButton({
+                "type": "f", "title": document.querySelector('meta[property="og:title"]')["content"],
+                "url": window.location.href });
+        </script>
+    </span>
+</strong></p>
+
+    <hr>
+    <h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; django </h3>
+
+<p>django는 python 프레임워크로 많은 곳에서 사용된다. 인스타그램이나 핀터레스트인가 사용한다고 들었다. 백엔드공부하고 docker나 같이 공부하려고 환경을 만들어보려고했다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+0. virtualenv venv -> cd venv/scripts -> activate.bat -> (after change env) pip install django
+1. django-admin startproject projName
+2. (in projName forder) python manage.py runserver -> start
+3. python manage.py startapp appName -> create urls.py and make views.py -> edit projName urls.py using 'include' -> settings.py(templates,installed_apps)
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; GAIQ </h3>
+
+<p>구글 애널리틱스는 웹페이지 분석 툴로 세계에서 가장 많이 쓰이고 있다. 무료에 설치도 편하고 효과적인 분석이 가능하다. 아래는 처음 공부하는 사람도 용어나 기능 등 쉽게 할 수 있도록 <a href="https://dachata.com/class/gaiq-questions-and-explanations/" target="_blank">링크</a>를 걸어놓았다.</p>
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp;  </h3>
+
+<p>bigquery를 python으로 쉽게 다루는 방법을 공유한다. kaggle 링크는 <a href="https://www.kaggle.com/hwangchanghyun/bigquery-tutorial-kor-eng" target="_blank">여기</a>에서 들어갈 수 있다.</p>
+<p>밑에는 bigquery 라이브러리를 통해 테이블을 다루고 데이터프레임으로 나타내 처음 어떻게 할지 생각할 수 있다. </p>
+<p>bigquery에는 nest라는 개념이 있다. 쉽게 말하면 데이터프레임의 한 셀에 또다른 데이터 프레임이 들어가 있다고 생각하면 된다. 그래서 이걸 unnest 하여 하는 것도 위에 링크에서 찾아 볼 수 있다. </p>
+<details><summary>code</summary><blockquote><pre><code>
+
+from google.cloud import bigquery
+
+# Create a "Client" object
+client = bigquery.Client()
+
+# Construct a reference to the "hacker_news" dataset
+dataset_ref = client.dataset("hacker_news", project="bigquery-public-data")
+
+# API request - fetch the dataset
+dataset = client.get_dataset(dataset_ref)
+
+# List all the tables in the "hacker_news" dataset
+tables = list(client.list_tables(dataset))
+
+# Print names of all tables in the dataset (there are four!)
+for table in tables:  
+    print(table.table_id)
+
+# Construct a reference to the "full" table
+table_ref = dataset_ref.table("full")
+
+# API request - fetch the table
+table = client.get_table(table_ref)
+
+# Preview the first five lines of the "full" table
+client.list_rows(table, max_results=5).to_dataframe() # selected_fields=table.schema[:1]
+
+
+# Query to select all the items from the "city" column where the "country" column is 'US'
+query = """
+        SELECT city
+        FROM `bigquery-public-data.openaq.global_air_quality`
+        WHERE country = 'US'
+        """
+
+# Create a "Client" object
+client = bigquery.Client()
+
+# Set up the query
+query_job = client.query(query)
+
+# API request - run the query, and return a pandas DataFrame
+us_cities = query_job.to_dataframe()
+
+
+## size check
+# Query to get the score column from every row where the type column has value "job"
+query = """
+        SELECT score, title
+        FROM `bigquery-public-data.hacker_news.full`
+        WHERE type = "job" 
+        """
+
+# Create a QueryJobConfig object to estimate size of query without running it
+dry_run_config = bigquery.QueryJobConfig(dry_run=True)
+
+# API request - dry run query to estimate costs
+dry_run_query_job = client.query(query, job_config=dry_run_config)
+
+print("This query will process {} bytes.".format(dry_run_query_job.total_bytes_processed))
+
+</code></pre></blockquote></details>
+
+<p><br></p>
+<h3 style="border-left: solid 3px #0E6073;"><span style="background-color:#2e3f59"></span> &nbsp; 우먼센스 기획자 후기</h3>
+
+<p>총 4개월 간의 긴 대외활동이 끝났다. </p>
+<p>우먼센스 라이프스타일 대외활동은 기업연계프로그램과 함께 기획자/마케터 과정을 거쳐 실무경험이 있는 인재로 거듭나게 할 목적으로 만들어졌다. </p>
+<p>본인 또한 이 과정을 수료하기 위해서 처음 면접과 자기소개서 등 열심히 쓰는 방법을 공부하며 다듬었다. 뭐든 직접 해보는 것이 실력이 가장 빠르게 오른다는 것을 알았다. 자기소개서를 직접 쓰며 본인의 강점과 활동에서 배운 점 등 일목조연하게 써서 설득하는 방법을 배웠고, 어떻게 쓰면 서류면접에서 면접관들의 마음을 훔칠 수 있는지 또한 알 수 있었다. 그래서 취업코칭을 받을 때와 다른 사람들이 쓴 자소서를 대조하며 공부했고, 동아미디어 그룹에 지원도 해서 서류는 붙었지만 면접에서 떨어졌다. 이 과정을 통해 효과적으로 자소서를 쓰고 내 활동을 어필하는 방법을 알 수 있었다. </p>
+<p>4개월 동안 휘닉스 호텔 앤 리조트와 기업미팅을 진행하며 최종적으로 맷돌을 이용한 티큐레이션 카페 메뉴 제안했다. 현재 휘닉스 제주 섭지코지의 F&amp;B와 액티비티팀, 어린이 프로그램 팀과 협의 중이고, 결과가 나오는대로 답변공유를 약속 받았다. </p>
+<p>아래 최종결과물에 대해서 우먼센스 편집장님, 팀장님 앞에서 발표를 했고, 4개월 간 활동에 대해서 모든 팀에 감히 순위를 매길 수는 없지만 그래도 기획자 과정을 훌륭히 완성했던 휘닉스1팀(우리팀)이 최우수상을 받았다.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/BjoSUOAI68LU6e" width="800" height="600" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuserd1531b/1-251262044" title="우먼센스 프로젝트 휘닉스 호텔 앤 리조트 1팀" target="_blank">우먼센스 프로젝트 휘닉스 호텔 앤 리조트 1팀</a> </strong> from <strong><a href="//www.slideshare.net/ssuserd1531b" target="_blank">황창현</a></strong> </div>
+
+<p>협업을 할 때 노션을 만들어 일정조율과 아이디어를 공유했고 google meet의 비대면 화상회의 또한 자주 함으로써 원할한 커뮤니케이션이 얼마나 중요한지 몸소 느끼고 커뮤니케이션의 효율을 위해서 팀 내에서 마음이 잘맞아야 한다는 것을 알았다. </p>
+<p>또한, 기획안 컨펌과정에서 멘토님의 부정적인 피드백을 받았는데, 이때 포기했다면 지금까지의 결과는 없었다고 생각한다. 팀의 아이디어가 괜찮을 것이라는 확실한 근거(시장조사 및 기획아이디어의 근거)를 가지고 있었고 오히려 피드백조차 설득시키고 보완해 나감으로써 기업에서 좋은 아이템이고 실현가능성 또한 있다고 들어 메뉴협의까지 할 수 있었다고 생각한다. 이 과정을 통해 자료와 근거를 통해 설득하는 방법을 배웠다.</p>
+<div style="margin: 0 auto;width:800px;overflow:hidden;margin-top:50px;">
+        <img src="https://ifh.cc/g/Bur0aj.jpg" style="transform:rotate(270deg);display:block;float:left;margin-left:50px;" width=300 height=300>
+        <img src="https://ifh.cc/g/O9hqG9.jpg" style="display:block;float:left;margin-left:50px;" width=400 height=300>
+</div>
+
+<p><br></p>
+    <div id="vcomment"></div>
+</div>
+<script>
+    new Valine({
+        el: '#vcomment',
+        appId: 'pMCP910pdFNjniAUKmcPWSzx-MdYXbMMI',
+        appKey: 'kywgNcY0JmhAJ5UxQ1yPMl6c',
+        meta: ['nick', 'mail'],
+        lang: 'en',
+        pageSize: 7
+    });
+</script>
+
+    </div>
+    <footer>
+    <h6>98hyun © 2021 Powered by Flask</h6>
+</footer>
+</body>
+
+</html>
