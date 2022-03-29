@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Recent Journey</h2>
+<div class="index-div">
+    <h2>Recent Journey </h2>
+    <a class="rss-icon" href="https://98hyun.github.io/rss.xml" target="_blank"><i class="fas fa-rss"></i></a>
+</div>
 <div class="postlist">
     {% for post in posts %}
     <a href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a>

@@ -21,12 +21,12 @@ header {
     flex-direction: column;
     background-color: #2e3f59;
     width: 100%;
-    height: 240px;
+    height: 190px;
     align-items: center;
 }
-header > h1{
+/* header > h1{
     font-size: 2rem;
-}
+} */
 div.title{
     width: 100%;
     height: 100%;
@@ -47,22 +47,45 @@ div.title > h6{
     width: 100%;
     height: 100%;
     color:white;
+    margin-top: 10px;
 }
-div.icons{
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+.title-subcont{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* height: ; */
 }
-div.icons > a,i{
+.title-subcont > a{
+    font-size: 2rem;
+    color:white;
+}
+.btn{
+    border: 1px solid white;
+    background-color: white;
+    color: #2e3f59;
+    padding: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+.index-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.index-div > h2,.rss-icon{
     padding-right: 7px;
     font-size: 1.5rem;
-    color: white;
 }
+
 #content {
     width: 100%;
     height: 100%;
