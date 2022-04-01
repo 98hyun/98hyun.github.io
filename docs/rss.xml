@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2022-03-01 11:24:55 KST+0900</lastBuildDate>
+  <lastBuildDate>2022-04-01 10:28:53 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2022-03-31</title>
+    <link>https://98hyun.github.io/posts/20220331.html</link>
+    <description>nodejs를 이용하여 long url을 short url로 변형시키는 사이드 프로젝트를 진행했다. 이번 nodejs를 처음 다루며 사용된 개념 중 runtime과 npm의 개념, 라이브러리들(express, mongoose, ejs)에 대한 설명, javascript 중 비동기와 동기의 개념과 await과 async의 사용이유에 대해서 다뤘다.</description>
+    <pubDate>2022-04-01</pubDate>
+    </item>
     
     <item>
     <title>2022-02-28</title>

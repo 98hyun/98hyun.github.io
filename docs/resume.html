@@ -1,1 +1,396 @@
-<iframe width="100%" height="100%" src="https://www.docdroid.net/KvJsHsJ/resume-pdf" frameborder="0" allowtransparency allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="/static/css/resume.css">
+    <title>Responsive resume cv</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">둘러보기</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="bx bx-home nav__icon active-link"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class="bx bx-user nav__icon"></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="bx bx-book nav__icon"></i>Education
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="bx bx-receipt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificate" class="nav__link">
+                            <i class="bx bx-award nav__icon"></i>Certificate
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class='bx bx-link-external nav__icon'></i>References
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="/static/img/perfil.jpg" alt="" class="home__img">
+                            
+                            <h1 class="home__title"><b>황창현</b></h1>
+                            <h3 class="home__profession">Data Driven Marketer</h3>
+                            <!-- <div>
+                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- Theme change button -->
+                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+                    <p class="profile__description">I am a person, responsible with their work during working hours.
+                        Finish various technical and higher studies at large universities. I have several years of
+                        experience and achievements in the labor field.
+                    </p>
+                </section>
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+                    <div class="social__container bd-grid">
+                        <a href="www.linkedin.com/in/98hyun" target="_blank" class="social__link">
+                            <i class="bx bxl-linkedin-square social__icon"></i>@98hyun
+                        </a>
+                        <a href="https://www.facebook.com/98hyun" target="_blank" class="social__link">
+                            <i class="bx bxl-facebook social__icon"></i>@98hyun
+                        </a>
+                        <a href="mailto:ckdckd01@gmail.com" target="_blank" class="social__link"><i class="bx bx-envelope social__icon"></i>@ckdckd01
+                        </a>
+                        <a href="https://github.com/98hyun" target="_blank" class="social__link">
+                            <i class='bx bxl-github social__icon'></i>@98hyun
+                        </a>
+                    </div>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">EDUCATION</h2>
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">전자정보통신공학 학사취득</h3>
+                                <span class="education__studies">세종대학교</span>
+                                <span class="education__year">2017 - 2023</span>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">데이터애널리틱스 융합전공 학사취득</h3>
+                                <span class="education__studies">세종대학교</span>
+                                <span class="education__year">2020 - 2023</span>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">디지털 마케팅 완주반 90일</h3>
+                                <span class="education__studies">제로베이스(온라인)</span>
+                                <span class="education__year">2020 - 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">SKILLS</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>HTML
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>CSS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>JAVASCRIPT
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Flutter
+                            </li>
+                        </ul>
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Python
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>R
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Tableau
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Excel
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">기술 블로그 개발 라이트닝 토크</h3>
+                                <span class="experience__company">2020.09.26 | 파이콘</span>
+                                <p class="experience__description">Python Flask 라이브러리를 통해 개발했던 블로그 템플릿 내용에 관련하여 개발하면서 어려웠던 점을 다른 사람들이 이겨낼 수 있게 알려주는 2020Pycon에서 라이트닝토크 부문에 지원했다.
+                                    라이트닝 토크를 준비하는 과정에서 파워포인트를 통해 영상을 다루기도 했었고 오픈소스를 활용하는 과정 중 블로그를 만들다가 모르는 부분에서 다른 외국인 개발자와 메일을 했던 경험까지 담아서 발표했다. 현재 리뉴얼한 블로그를 12월 30일부터 다시 열고 github pages를 통해 운영하고있다. 
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">SW AI 경진대회 장려상</h3>
+                                <span class="experience__company">2020.10 - 2020.11 | 세종대학교</span>
+                                <p class="experience__description">Work in this company dedicating the best
+                                    responsibility in the area that corresponds, delivering the best results for the
+                                    company and improving productivity.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">사용자 행동 예측 경진대회 5등</h3>
+                                <span class="experience__company">2020.12 - 2021.01 | 데이콘</span>
+                                <p class="experience__description">데이콘 이용자 수의 추세와 경향을 분석하여 시계열 분석에 특화된 Fbprophet 알고리즘을 사용했다. 사건이 발생하기 시작한 최근 1년 데이터를 사용하는 “When Less is More” 가설과 주말과 주중의 다른 특성에 따라서 최적값을 달리 선택하는 방식을 통해 적절한 일반화가 된 모델을 개발하여 5등상을 수상했다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">블로그 데이터 분석 및 광고 집행</h3>
+                                <span class="experience__company">2020.12 - 2021.01 | 제로 베이스</span>
+                                <p class="experience__description">현재 google analytics 및 tag manager와 병행하며 얼마없는 이용자들에 대해서 분석도 해본 경험이 있다. 또한, google ads를 통해 실제 광고를 집행하여 목요일과 오전 시간대에 2030 남성들이 많이 본다는 것을 확인했다. 과정을 정리하여 slideshare에 올려놓고 제로베이스 최종과제로 내어 마지막 환급금까지 받고 수료증도 받았다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">TABLEAU 페이스북 페이지 운영</h3>
+                                <span class="experience__company">2021.08 - 2021.10 </span>
+                                <p class="experience__description">Tableau 독학을 위해 Community 에서 Public인 대쉬보드를 분해하며 Tableau 작동원리를 이해하고 계산 과정을 복습했다. 또한, 필요한 계산식부터 사진 데이터 등 처음부터 다시 새롭게 파이썬을 통해 제작하거나 가져와서 만드는 과정을 화면녹화했다. 그리고 Finalcut Pro를 통해 영상편집을 하여 Facebook페이지를 만들어 게시했다. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">사계절 포지셔닝 : 맷돌 티 큐레이션 상품 기획</h3>
+                                <span class="experience__company">2021.11 ~ 2022.02 | 휘닉스 호텔앤 리조트 </span>
+                                <p class="experience__description">휘닉스 호텔앤 리조트, 제주 지역의 사계절 포지셔닝을 기업 미션으로 맷돌을 이용한 티 큐레이션 상품을 기획했다. 시장조사와 STP분석을 위해 소비자리뷰데이터 분석을 진행했고, 아이디어를 관철하기 시키기 위해 아이디어에 반대였던 멘토님을 설득했고 총 3차례의 기업미팅을 거쳐 아이디어를 디벨롭 했다. 그 결과, 최종 결과물에 대한 휘닉스 제주 액티비티팀 및 카페 운영팀에 대한 답변 공유를 약속받았다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">에디터 과정 : 디지털 기사 게재</h3>
+                                <span class="experience__company">2022.01 - 2022.03 | 우먼센스 </span>
+                                <p class="experience__description">회의를 통해 봄을 맞아 봄의 자연경관과 어울리는 맥주 양조장과 봄 시즌 맥주를 파는 양조장을 주제로 기사 기획을 했고, ‘플레이그라운드브루어리’를 맡아 해당 브랜드 매니저와 필요한 자료들을 공유하며 소통했다. 디지털 기사를 내기 위한 템플릿 통일과 내용을 다듬었고 그 결과, 우먼센스 라이프스타일 GOURMET 카테고리에 게재됐다. <a class="social__link" target="_blank" href="https://www.smlounge.co.kr/woman/article/50531">링크 참고</a>
+                                </p>
+                            </div>
+                        </div>
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">빅데이터 분석실무 2급 (2020)</h3>
+                            <p class="certificate__description">For meeting the expectations of leading the team to work
+                                the specified tasks in the labor field.</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">SQLD (2021)</h3>
+                            <p class="certificate__description">For meeting the expectations of leading the team to work
+                                the specified tasks in the labor field.</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">GAIQ (2022)</h3>
+                            <p class="certificate__description">For meeting the expectations of leading the team to work
+                                the specified tasks in the labor field.</p>
+                        </div>
+                        <!-- <div class="certificate__content">
+                            <h3 class="certificate__title">사회조사분석사 (2022)</h3>
+                            <p class="certificate__description">For meeting the expectations of leading the team to work
+                                the specified tasks in the labor field.</p>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!--========== REFERENCES ==========-->
+                <!-- <section class="references section" id="references">
+                    <h2 class="section-title">References</h2>
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Sr. Director</span>
+                            <h3 class="references__title">Mr. cleo</h3>
+                            <ul class="references__contact">
+                                <li>Phone: 999-9999-9999</li>
+                                <li>Email: user@example.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Sr. Director</span>
+                            <h3 class="references__title">Mr. cleo</h3>
+                            <ul class="references__contact">
+                                <li>Phone: 999-9999-9999</li>
+                                <li>Email: user@example.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                        <li class="languages__name">
+                            <span class="language__circle"></span> English (토익스피킹 Level 6)
+                        </li>
+                        <!-- <li class="languages__name">
+                            <span class="language__circle"></span> Spanish
+                        </li> -->
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name">음악</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bxs-plane-alt interests__icon"></i>
+                            <span class="interests__name">여행</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bx-code interests__icon'></i>
+                            <span class="interests__name">프로그래밍</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bx-pulse interests__icon'></i>
+                            <span class="interests__name">택견</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="/static/js/html2pdf.bundle.min.js"></script>
+    
+    <!--========== MAIN JS ==========-->
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>
