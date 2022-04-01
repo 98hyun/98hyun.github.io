@@ -197,3 +197,37 @@ pre{
 code{
     white-space: pre-wrap;
 }
+form{
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form > h1{
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+.input-field{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
+.textarea-field::placeholder{
+    position: absolute;
+    top: 10px;
+}
+form > .btn{
+    width: 400px;
+    border-radius: 14px;
+    background-color: #2e3f59;
+    color: white;
+    
+}

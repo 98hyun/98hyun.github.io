@@ -24,7 +24,7 @@ app.config['FREEZER_IGNORE_MIMETYPE_WARNINGS'] = True
 app.config.update(
     SESSION_COOKIE_SECURE=True,
     SESSION_COOKIE_HTTPONLY=True,
-    SESSION_COOKIE_SAMESITE='Strict',
+    SESSION_COOKIE_SAMESITE='none',
 )
 app.config.from_object(__name__) # 무슨뜻인지 모르겠다.
 pages=FlatPages(app)

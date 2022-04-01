@@ -41,8 +41,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
     <!-- js -->
     
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script type="text/javascript" src="/static/js/share.js"></script>
 
@@ -167,18 +165,16 @@ tableau로는 포스트코로나 시대에서 6개구에 대한 경제를 분석
 어떤걸 좋아하는지. 어떻게 살고 싶은지. 나에 대해서 관심이 적었던 것 같다.<br/> 
 뭔갈 그저. 이유없이 하는것 보다 하고싶어서 하는. 그런 약속을 21년에도 이어가고 싶다. <br/>
 글쓰기도 연습하고 싶다. 하고 싶은게 많다. 이것저것 다 해보고 싶다. <br/></p>
-    <div id="vcomment"></div>
+    <form action="https://www.actionforms.io/e/r/98hyun" method="POST">
+        <h1>Contact Form</h1>
+        <input type="hidden" name="_subject" value="Contact Form from blog">
+        <input type="text" name="name" required class="input-field" placeholder="NickName" class="input-field">
+        <input type="email" name="email" required placeholder="The Email that you will receive a reply from"
+            class="input-field">
+        <textarea type="text" name="msg" placeholder="Your Message&#13;&#10;You should send it and go back" class="input-field textarea-field" required></textarea>
+        <button class="btn" type="submit">Send</button>
+    </form>
 </div>
-<script>
-    new Valine({
-        el: '#vcomment',
-        appId: 'pMCP910pdFNjniAUKmcPWSzx-MdYXbMMI',
-        appKey: 'kywgNcY0JmhAJ5UxQ1yPMl6c',
-        meta: ['nick', 'mail'],
-        lang: 'en',
-        pageSize: 7
-    });
-</script>
 
     </div>
     <footer>
