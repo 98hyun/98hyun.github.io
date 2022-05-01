@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2022-04-01 14:55:47 KST+0900</lastBuildDate>
+  <lastBuildDate>2022-05-01 12:55:19 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2022-04-30</title>
+    <link>https://98hyun.github.io/posts/20220430.html</link>
+    <description>None</description>
+    <pubDate>2022-04-30</pubDate>
+    </item>
     
     <item>
     <title>2022-03-31</title>
