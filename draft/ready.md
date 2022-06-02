@@ -27,3 +27,38 @@ tags: [개발환경, 데이터분석, 시각화]
 1. form
 2. javascript - css (resume)
 3. 
+
+
+
+# code snippet
+https://carbon.now.sh/
+
+# feature selection 
+https://github.com/fidelity/selective
+
+# f.e 
+https://github.com/dirty-cat/dirty_cat (ㅇ) https://www.kaggle.com/hwangchanghyun/dirty-cat-auto-tranformer-categorical-variable
+
+
+# model
+https://github.com/koaning/scikit-lego
+https://github.com/csinva/imodels
+https://github.com/shankarpandala/lazypredict
+
+# imputation
+https://github.com/awslabs/datawig
+https://github.com/kearnz/autoimpute
+
+# anomaly detection
+https://youtu.be/F_dG5NKtwoU
+https://www.kaggle.com/code/sergiovirahonda/forecasting-and-anomally-detection/notebook
+https://www.kaggle.com/code/rkuo2000/sensor-anomaly-detection/notebook
+https://www.kaggle.com/code/drscarlat/anomaly-detection-in-multivariate-time-series/notebook
+
+# 음성
+https://www.kaggle.com/code/hamditarek/audio-data-analysis-using-librosa/comments
+
+# etc
+https://github.com/tableau/TabPy
+https://github.com/pyscript/pyscript
+https://github.com/davidefiocco/streamlit-fastapi-model-serving

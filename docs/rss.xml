@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2022-05-01 12:55:19 KST+0900</lastBuildDate>
+  <lastBuildDate>2022-06-02 11:01:09 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2022-05-31</title>
+    <link>https://98hyun.github.io/posts/20220531.html</link>
+    <description>dirty-cat 라이브러리 소개와 a/b test를 소개하며 통계 기초 용어를 정리했다.</description>
+    <pubDate>2022-06-02</pubDate>
+    </item>
     
     <item>
     <title>2022-04-30</title>
