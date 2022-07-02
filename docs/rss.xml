@@ -5,8 +5,15 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2022-06-02 11:01:09 KST+0900</lastBuildDate>
+  <lastBuildDate>2022-07-02 10:44:06 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2022-06-30</title>
+    <link>https://98hyun.github.io/posts/20220630.html</link>
+    <description>B2B 데이터에 대한 이해와 B2B 데이터 분석 및 데이터 관리 방법 등에 대해서 포스팅 했던 글을 해석하며 B2B 데이터를 어떻게 다뤄야할지에 대한 기본 상식을 공부했다. postgresql을 공부하며 해당 데이터베이스 서비스가 어떤 이점을 갖고 있는지 sql 쿼리문을 공부하며 좋은 Tip들을 적었다. 특히, sql을 통해 바로바로 + 어떻게 + 어떤 분석을 하면 좋은지도 적어놓았다. 이번 기말고사를 컨조인트 분석과 MDS분석을 Excel로 진행하며 해찾기 기능 및 데이터 분석을 통해 진행했다. 해당 과정 중 팁과 분석 방법에 대해서 적어놓았다. 또한 경쟁사분석을 excel로 다루면서 log-log model에 대해서 해석한 경험 또한 작성했다.</description>
+    <pubDate>2022-07-02</pubDate>
+    </item>
     
     <item>
     <title>2022-05-31</title>

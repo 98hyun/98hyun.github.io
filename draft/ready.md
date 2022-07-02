@@ -37,7 +37,7 @@ https://carbon.now.sh/
 https://github.com/fidelity/selective
 
 # f.e 
-https://github.com/dirty-cat/dirty_cat (ㅇ) https://www.kaggle.com/hwangchanghyun/dirty-cat-auto-tranformer-categorical-variable
+dirty-cat-auto-tranformer-categorical-variable
 
 
 # model
@@ -62,3 +62,8 @@ https://www.kaggle.com/code/hamditarek/audio-data-analysis-using-librosa/comment
 https://github.com/tableau/TabPy
 https://github.com/pyscript/pyscript
 https://github.com/davidefiocco/streamlit-fastapi-model-serving
+https://github.com/amalshaji/style-transfer
+
+요인분석 https://hleecaster.com/python-factor-analysis/ https://www.datacamp.com/tutorial/introduction-factor-analysis
+
+matplotlib table + annotate
