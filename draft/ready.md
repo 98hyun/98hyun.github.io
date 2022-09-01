@@ -67,3 +67,6 @@ https://github.com/amalshaji/style-transfer
 요인분석 https://hleecaster.com/python-factor-analysis/ https://www.datacamp.com/tutorial/introduction-factor-analysis
 
 matplotlib table + annotate
+
+## coding
+https://yangnyang.tistory.com/14

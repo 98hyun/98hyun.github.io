@@ -5,8 +5,22 @@
   <atom:link href="https://98hyun.github.io/rss.xml" rel="self" type="application/xml" />
   <link>https://98hyun.github.io/</link>
   <description>Data Traveler</description>
-  <lastBuildDate>2022-07-02 10:44:06 KST+0900</lastBuildDate>
+  <lastBuildDate>2022-09-01 22:50:59 KST+0900</lastBuildDate>
   <language>ko</language>
+    
+    <item>
+    <title>2022-08-31</title>
+    <link>https://98hyun.github.io/posts/20220831.html</link>
+    <description>인턴 생활을 하며 느낀점과 Master Data Management Plan을 기획하며 업무 순서, 방향을 공유한다. 마지막으로 SAP을 사용하며 느꼈던 점을 얘기한다.</description>
+    <pubDate>2022-09-01</pubDate>
+    </item>
+    
+    <item>
+    <title>2022-07-31</title>
+    <link>https://98hyun.github.io/posts/20220731.html</link>
+    <description>B2B 데이터에 대한 이해와 B2B 데이터 분석 및 데이터 관리 방법 등에 대해서 포스팅 했던 글을 해석하며 B2B 데이터를 어떻게 다뤄야할지에 대한 기본 상식을 공부했다.</description>
+    <pubDate>2022-08-01</pubDate>
+    </item>
     
     <item>
     <title>2022-06-30</title>
